@@ -25,13 +25,38 @@ const LabeledList = ({ items }) => (
   </div>
 );
 
+const QuickNotesPanel = ({ notes }) => (
+  <section className="quick-notes" aria-label="Diem chinh can nho">
+    <div className="quick-notes__header">
+      <h2 className="quick-notes__title">{notes.title}</h2>
+      {notes.intro && <p className="quick-notes__intro">{notes.intro}</p>}
+    </div>
+
+    <div className="quick-notes__grid">
+      {notes.items.map((item, index) => (
+        <article key={item.label} className="quick-notes__card">
+          <span className="quick-notes__index">0{index + 1}</span>
+          <h3 className="quick-notes__card-title">{item.label}</h3>
+          <p className="quick-notes__card-desc">{item.desc}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+);
+
 const ModuleContent = ({ module, moduleData, prevModule, nextModule, onNavigate }) => {
+  const showTakeaways = !moduleData.content?.quickNotes;
+
   const renderContent = () => {
     switch (module.id) {
 
       case 'module-1':
         return (
           <>
+            {moduleData.content.quickNotes && (
+              <QuickNotesPanel notes={moduleData.content.quickNotes} />
+            )}
+
             <ContentSection>
               <SectionTitle>Khái niệm và vị trí của văn hóa</SectionTitle>
               <Paragraph>{moduleData.content.definition}</Paragraph>
@@ -57,6 +82,10 @@ const ModuleContent = ({ module, moduleData, prevModule, nextModule, onNavigate 
       case 'module-2':
         return (
           <>
+            {moduleData.content.quickNotes && (
+              <QuickNotesPanel notes={moduleData.content.quickNotes} />
+            )}
+
             <ContentSection>
               <SectionTitle>{moduleData.content.role.title}</SectionTitle>
               <HighlightBox title="⚡ Luận điểm cốt lõi" type="warning">
@@ -236,7 +265,7 @@ const ModuleContent = ({ module, moduleData, prevModule, nextModule, onNavigate 
           <HeroImage src={moduleData.heroImage} alt={moduleData.heroAlt} />
         )}
 
-        <KeyTakeaways takeaways={moduleData.takeaways} />
+        {showTakeaways && <KeyTakeaways takeaways={moduleData.takeaways} />}
 
         {renderContent()}
 

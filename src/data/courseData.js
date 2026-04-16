@@ -52,46 +52,67 @@ export const moduleContents = {
   'module-1': {
     category: 'Chương 6.1',
     title: 'Tư tưởng Hồ Chí Minh về Văn hóa',
-    readingTime: 6,
+    readingTime: 8,
     lastUpdated: '16/04/2026',
     heroImage: '/images/anh1.png',
     heroAlt: 'Văn hóa dân tộc Việt Nam',
     takeaways: [
       {
         icon: BookOpen,
-        title: 'Khái niệm & Vị trí',
+        title: 'Khái niệm cốt lõi',
         summary:
-          'Văn hóa là sự tổng hợp mọi phương thức sinh hoạt và sáng tạo của loài người, thuộc kiến trúc thượng tầng, quan hệ biện chứng với kinh tế và chính trị.'
+          'Theo nghĩa rộng, văn hóa là toàn bộ phương thức sinh hoạt và sáng tạo của loài người nhằm đáp ứng nhu cầu sinh tồn, phát triển.'
       },
       {
         icon: Lightbulb,
-        title: 'Vai trò kép',
+        title: 'Quan hệ biện chứng',
         summary:
-          'Văn hóa vừa là mục tiêu (hướng tới Chân – Thiện – Mỹ), vừa là động lực và mặt trận của sự nghiệp cách mạng.'
+          'Văn hóa thuộc kiến trúc thượng tầng và luôn tác động qua lại với kinh tế, chính trị, xã hội trong toàn bộ tiến trình cách mạng.'
       },
       {
         icon: CheckCircle,
-        title: 'Ba tính chất',
+        title: 'Định hướng xây dựng',
         summary:
-          'Nền văn hóa mới phải mang tính dân tộc, khoa học và đại chúng.'
+          'Lấy văn hóa dân tộc làm gốc, đồng thời tiếp thu tinh hoa văn hóa nhân loại để làm giàu văn hóa Việt Nam theo tinh thần dân chủ.'
       }
     ],
     content: {
+      quickNotes: {
+        title: '6.1 Tư tưởng Hồ Chí Minh về văn hóa: Điểm chính cần nhớ',
+        items: [
+          {
+            label: 'Bốn cách tiếp cận & Vị trí',
+            desc: 'Hồ Chí Minh có 4 cách tiếp cận chủ yếu về văn hóa (nghĩa rộng, hẹp, hẹp hơn và theo công cụ sinh hoạt). Văn hóa thuộc kiến trúc thượng tầng và có quan hệ biện chứng với kinh tế, chính trị, xã hội.'
+          },
+          {
+            label: 'Vai trò kép & Mặt trận',
+            desc: 'Văn hóa vừa là mục tiêu (hướng tới Chân - Thiện - Mỹ), vừa là động lực của sự nghiệp cách mạng. Đồng thời văn hóa nghệ thuật là một mặt trận; người làm văn hóa, nghệ thuật là chiến sĩ.'
+          },
+          {
+            label: 'Định hướng xây dựng',
+            desc: 'Lấy văn hóa dân tộc làm gốc, giữ bản sắc và cốt cách dân tộc; đồng thời chủ động tiếp thu tinh hoa văn hóa nhân loại để làm giàu văn hóa Việt Nam và xây dựng nền văn hóa hợp tinh thần dân chủ.'
+          },
+          {
+            label: 'Ba tính chất cốt lõi',
+            desc: 'Nền văn hóa mới phải mang tính dân tộc, khoa học và đại chúng.'
+          }
+        ]
+      },
       definition:
-        'Văn hóa theo nghĩa rộng là sự tổng hợp mọi phương thức sinh hoạt và sáng tạo của loài người nhằm thích ứng với nhu cầu sinh tồn. Văn hóa thuộc kiến trúc thượng tầng, có mối quan hệ biện chứng (tác động qua lại) mật thiết với chính trị, kinh tế và xã hội.',
+        'Hồ Chí Minh tiếp cận văn hóa theo nhiều bình diện (nghĩa rộng, nghĩa hẹp, nghĩa hẹp hơn và theo phương thức sử dụng công cụ sinh hoạt). Theo nghĩa rộng, văn hóa là sự tổng hợp mọi phương thức sinh hoạt và sáng tạo của loài người nhằm thích ứng với nhu cầu sinh tồn. Văn hóa thuộc kiến trúc thượng tầng, có mối quan hệ biện chứng (tác động qua lại) mật thiết với chính trị, kinh tế và xã hội.',
       roles: {
         title: 'Tính chất và vai trò của văn hóa',
         items: [
-          'Văn hóa vừa là mục tiêu: hướng tới quyền sống, quyền tự do, mưu cầu hạnh phúc và các giá trị Chân – Thiện – Mỹ.',
+          'Văn hóa vừa là mục tiêu: hướng tới quyền sống, quyền tự do, mưu cầu hạnh phúc và các giá trị Chân - Thiện - Mỹ.',
           'Văn hóa vừa là động lực: thúc đẩy sự nghiệp cách mạng phát triển.',
-          'Văn hóa là một mặt trận: những người làm công tác văn hóa, nghệ thuật là chiến sĩ, dùng ngòi bút làm vũ khí sắc bén để phụng sự Tổ quốc và phục vụ nhân dân.',
+          'Văn hóa nghệ thuật là một mặt trận; những người làm công tác văn hóa, nghệ thuật là chiến sĩ, dùng ngòi bút làm vũ khí sắc bén để phụng sự Tổ quốc và phục vụ nhân dân.',
           'Mọi hoạt động văn hóa phải "từ trong quần chúng ra, về sâu trong quần chúng" — do nhân dân thẩm định và phục vụ nhân dân.'
         ]
       },
       orientation: {
         title: 'Định hướng xây dựng nền văn hóa mới',
         content:
-          'Phải lấy văn hóa dân tộc làm gốc, giữ gìn bản sắc và cốt cách dân tộc. Đồng thời chủ động chắt lọc, tiếp thu tinh hoa văn hóa nhân loại (Đông, Tây, kim, cổ) để làm giàu cho văn hóa Việt Nam.'
+          'Phải lấy văn hóa dân tộc làm gốc, giữ gìn bản sắc và cốt cách dân tộc. Đồng thời chủ động chắt lọc, tiếp thu tinh hoa văn hóa nhân loại (Đông, Tây, kim, cổ) để làm giàu cho văn hóa Việt Nam và xây dựng nền văn hóa hợp với tinh thần dân chủ.'
       },
       threeQualities: {
         title: 'Ba tính chất của nền văn hóa mới',
@@ -115,8 +136,8 @@ export const moduleContents = {
 
   'module-2': {
     category: 'Chương 6.2',
-    title: 'Tư tưởng Hồ Chí Minh về Đạo đức',
-    readingTime: 7,
+    title: 'Tư tưởng Hồ Chí Minh về Đạo đức cách mạng',
+    readingTime: 8,
     lastUpdated: '16/04/2026',
     heroImage: '/images/anh2.png',
     heroAlt: 'Đạo đức cách mạng theo Tư tưởng Hồ Chí Minh',
@@ -141,10 +162,27 @@ export const moduleContents = {
       }
     ],
     content: {
+      quickNotes: {
+        title: '6.2 Tư tưởng Hồ Chí Minh về đạo đức: Điểm chính cần nhớ',
+        items: [
+          {
+            label: 'Đạo đức là gốc',
+            desc: 'Đức và tài phải thống nhất; đạo đức là nền tảng. Không có đức thì tài mấy cũng vô dụng, giống như "cây không có gốc, sông không có nguồn".'
+          },
+          {
+            label: 'Bốn chuẩn mực cốt lõi',
+            desc: 'Trung với nước hiếu với dân; Cần kiệm liêm chính chí công vô tư (nhằm chống chủ nghĩa cá nhân); Thương yêu con người; Tinh thần quốc tế trong sáng.'
+          },
+          {
+            label: 'Ba nguyên tắc xây dựng',
+            desc: 'Nói đi đôi với làm (quan trọng bậc nhất); Xây đi đôi với chống (lấy xây làm chính); Tu dưỡng đạo đức suốt đời.'
+          }
+        ]
+      },
       role: {
         title: 'Vai trò của đạo đức cách mạng',
         content:
-          'Đạo đức là gốc, là nền tảng tinh thần và là sức mạnh của người cách mạng. Giữa "đức" và "tài" (hồng và chuyên) phải thống nhất, trong đó đạo đức là gốc — nếu không có đạo đức thì tài giỏi mấy cũng vô dụng, thậm chí có hại cho Đảng và nhân dân.'
+          'Đạo đức là gốc, là nền tảng tinh thần của người cách mạng. Giữa "đức" và "tài" (hồng và chuyên) phải thống nhất, trong đó đạo đức là gốc. Bác ví: người cách mạng không có đạo đức thì dù tài giỏi mấy cũng không lãnh đạo được nhân dân, giống như "cây không có gốc, sông không có nguồn".'
       },
       fourStandards: {
         title: 'Bốn chuẩn mực đạo đức cốt lõi',
@@ -155,7 +193,7 @@ export const moduleContents = {
           },
           {
             label: 'Cần, kiệm, liêm, chính, chí công vô tư',
-            desc: 'Nội dung cốt lõi gắn với sinh hoạt hằng ngày: siêng năng, tiết kiệm, trong sạch, thẳng thắn và luôn đặt lợi ích của Đảng, của dân tộc lên trên hết. Kiên quyết chống chủ nghĩa cá nhân.'
+            desc: 'Nội dung cốt lõi gắn với sinh hoạt hằng ngày. Trong đó, chí công vô tư là sự tiếp nối của Cần, Kiệm, Liêm, Chính nhằm kiên quyết chống lại chủ nghĩa cá nhân.'
           },
           {
             label: 'Thương yêu con người',
@@ -163,7 +201,7 @@ export const moduleContents = {
           },
           {
             label: 'Tinh thần quốc tế trong sáng',
-            desc: 'Kết hợp nhuần nhuyễn giữa chủ nghĩa yêu nước chân chính và chủ nghĩa quốc tế vô sản; đoàn kết với nhân dân thế giới vì hòa bình và tiến bộ.'
+            desc: 'Kết hợp nhuần nhuyễn giữa chủ nghĩa yêu nước chân chính và chủ nghĩa quốc tế vô sản; đoàn kết với nhân dân thế giới.'
           }
         ]
       },
@@ -172,11 +210,11 @@ export const moduleContents = {
         items: [
           {
             label: 'Nói đi đôi với làm, nêu gương về đạo đức',
-            desc: 'Chống lại thói đạo đức giả. Cán bộ, đảng viên phải làm gương cho quần chúng noi theo — người lãnh đạo càng cao thì càng phải gương mẫu.'
+            desc: 'Đây là nguyên tắc quan trọng bậc nhất. Chống lại thói đạo đức giả. Cán bộ, đảng viên phải làm gương cho quần chúng noi theo — người lãnh đạo càng cao thì càng phải gương mẫu.'
           },
           {
             label: 'Xây đi đôi với chống',
-            desc: 'Xây dựng đạo đức mới phải đi liền với đấu tranh chống lại cái xấu, cái ác — đặc biệt phải "quét sạch chủ nghĩa cá nhân".'
+            desc: 'Xây dựng đạo đức mới phải đi liền với đấu tranh chống lại cái xấu, cái ác. Trong đó, trọng tâm là "lấy xây làm chính" và "quét sạch chủ nghĩa cá nhân".'
           },
           {
             label: 'Tu dưỡng đạo đức suốt đời',
