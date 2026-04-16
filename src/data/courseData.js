@@ -1,16 +1,12 @@
-import { 
-  Globe, 
-  TrendingUp, 
-  Scale, 
-  Shield, 
-  Lightbulb,
-  Target,
-  Building2,
-  Coins,
-  Users,
+import {
   BookOpen,
-  AlertTriangle,
-  CheckCircle
+  Lightbulb,
+  CheckCircle,
+  Shield,
+  Target,
+  Users,
+  Scale,
+  Heart
 } from 'lucide-react';
 
 export const modules = [
@@ -22,301 +18,359 @@ export const modules = [
   },
   {
     id: 'module-1',
-    title: 'Lời mở đầu',
-    description: 'Bối cảnh toàn cầu hóa và vấn đề đặt ra cho Việt Nam',
+    title: 'Tư tưởng HCM về Văn hóa',
+    description: 'Khái niệm, vai trò và định hướng xây dựng nền văn hóa mới',
     status: 'current'
   },
   {
     id: 'module-2',
-    title: 'Khái niệm & Nội dung Hội nhập',
-    description: 'Định nghĩa, tính tất yếu và các bước chuẩn bị',
+    title: 'Tư tưởng HCM về Đạo đức',
+    description: 'Chuẩn mực đạo đức cách mạng và nguyên tắc xây dựng',
     status: 'current'
   },
   {
     id: 'module-3',
-    title: 'Tác động của Hội nhập',
-    description: 'Phân tích tác động tích cực và tiêu cực',
+    title: 'Tư tưởng HCM về Con người',
+    description: 'Quan niệm về con người và chiến lược "trồng người"',
     status: 'current'
   },
   {
     id: 'module-4',
-    title: '"Biên giới mềm" & Giải pháp',
-    description: 'Tự chủ hay phụ thuộc? Chiến lược cho Việt Nam',
-    status: 'current'
-  },
-  {
-    id: 'module-end',
-    title: 'Kết thúc khóa học',
-    description: 'Tổng kết và đánh giá kiến thức',
+    title: 'Mối liên hệ & Ý nghĩa thực tiễn',
+    description: 'Tổng hợp và vận dụng trong thời đại ngày nay',
     status: 'current'
   },
   {
     id: 'module-ai',
-    title: 'AI Tools & Attribution',
-    description: 'Công cụ AI được sử dụng và nguồn tham khảo',
+    title: 'AI Tools & Nguồn tham khảo',
+    description: 'Công cụ AI được sử dụng và tài liệu tham khảo',
     status: 'current'
   }
 ];
 
 export const moduleContents = {
   'module-1': {
-    category: 'Lời mở đầu',
-    title: 'Bối cảnh toàn cầu hóa',
-    readingTime: 4,
-    lastUpdated: '16/12/2024',
+    category: 'Chương 6.1',
+    title: 'Tư tưởng Hồ Chí Minh về Văn hóa',
+    readingTime: 6,
+    lastUpdated: '16/04/2026',
     heroImage: '/images/anh1.png',
-    heroAlt: 'Global economy and international trade',
-    takeaways: [
-      {
-        icon: Globe,
-        title: 'Toàn cầu hóa',
-        summary: 'Các nền kinh tế gắn kết chặt chẽ qua thương mại, đầu tư và công nghệ.'
-      },
-      {
-        icon: TrendingUp,
-        title: 'Biên giới mềm',
-        summary: 'Sức mạnh kinh tế phụ thuộc vào năng lực cạnh tranh và khả năng thích ứng.'
-      },
-      {
-        icon: Scale,
-        title: 'Thách thức Việt Nam',
-        summary: 'Hội nhập để phát triển nhưng tránh phụ thuộc vào bên ngoài.'
-      }
-    ],
-    content: {
-      overview: `Trong bối cảnh toàn cầu hóa hiện nay, các nền kinh tế quốc gia ngày càng gắn kết chặt chẽ với nhau thông qua thương mại, đầu tư, công nghệ và lao động. Ranh giới kinh tế truyền thống dựa trên lãnh thổ đang dần bị xóa nhòa, thay vào đó là khái niệm "biên giới mềm", nơi sức mạnh kinh tế được quyết định bởi năng lực cạnh tranh, trình độ công nghệ và khả năng thích ứng.`,
-      mainPoints: [
-        'Toàn cầu hóa làm gắn kết các nền kinh tế quốc gia',
-        'Khái niệm "biên giới mềm" thay thế ranh giới lãnh thổ truyền thống',
-        'Sức mạnh kinh tế phụ thuộc vào năng lực cạnh tranh'
-      ],
-      deepDive: `Đối với Việt Nam – một quốc gia đang phát triển – hội nhập kinh tế quốc tế là con đường tất yếu để phát triển. Tuy nhiên, hội nhập sâu rộng cũng đặt ra nguy cơ phụ thuộc vào vốn, công nghệ và thị trường bên ngoài, từ đó ảnh hưởng đến độc lập, tự chủ kinh tế.`,
-      keyQuestion: 'Việt Nam cần hội nhập như thế nào để vừa phát triển, vừa giữ vững chủ quyền kinh tế quốc gia?'
-    }
-  },
-  'module-2': {
-    category: 'Chương 6.2.1',
-    title: 'Hội nhập Kinh tế Quốc tế của Việt Nam',
-    readingTime: 8,
-    lastUpdated: '16/12/2024',
-    heroImage: '/images/anh2.png',
-    heroAlt: 'Industrial manufacturing and production',
+    heroAlt: 'Văn hóa dân tộc Việt Nam',
     takeaways: [
       {
         icon: BookOpen,
-        title: 'Khái niệm',
-        summary: 'Gắn kết nền kinh tế với thế giới, chia sẻ lợi ích và tuân theo "luật chơi" chung.'
-      },
-      {
-        icon: Target,
-        title: 'Tính tất yếu',
-        summary: 'Tận dụng cơ hội, xu thế thời đại, phát triển lực lượng sản xuất.'
-      },
-      {
-        icon: Building2,
-        title: 'Chuẩn bị',
-        summary: 'Cải cách thể chế, đa dạng hóa hình thức và mức độ hội nhập.'
-      }
-    ],
-    content: {
-      definition: `Hội nhập kinh tế quốc tế của một quốc gia là quá trình quốc gia đó thực hiện gắn kết nền kinh tế của mình với nền kinh tế thế giới dựa trên sự chia sẻ lợi ích đồng thời tuân thủ các chuẩn mực quốc tế chung.`,
-      whyIntegrate: {
-        title: 'Tại sao cần hội nhập? (Tính tất yếu khách quan)',
-        items: [
-          'Thứ nhất, do xu thế khách quan trong bối cảnh toàn cầu hóa kinh tế.',
-          'Thứ hai, hội nhập kinh tế quốc tế là phương thức phát triển phổ biến của các nước, nhất là các nước đang và kém phát triển trong điều kiện hiện nay.',     ]
-      },
-      preparation: {
-        title: 'Nội dung hội nhập (Cần chuẩn bị những gì?)',
-        items: [
-          'Chuẩn bị điều kiện nội tại: Cải cách thể chế, pháp luật, đào tạo con người, nâng cấp hạ tầng. Ví dụ: Sửa Luật Đầu tư để người nước ngoài dễ kinh doanh; học tiếng Anh, tin học để làm việc quốc tế.',
-          'Đa dạng hóa hình thức và mức độ: Từ thấp đến cao - Thỏa thuận ưu đãi → Khu vực mậu dịch tự do (FTA) → Liên minh thuế quan... Ví dụ: Việt Nam ký EVFTA với châu Âu để giảm thuế về 0% cho nhiều mặt hàng.'
-        ]
-      }
-    }
-  },
-  'module-3': {
-    category: 'Chương 6.2.2',
-    title: 'Tác động của Hội nhập Kinh tế',
-    readingTime: 7,
-    lastUpdated: '16/12/2024',
-    heroImage: '/images/anh3.png',
-    heroAlt: 'Industrial factory and economic growth',
-    takeaways: [
-      {
-        icon: CheckCircle,
-        title: 'Tích cực',
-        summary: 'Mở rộng thị trường, thu hút đầu tư, nâng cao vị thế quốc gia.'
-      },
-      {
-        icon: AlertTriangle,
-        title: 'Tiêu cực',
-        summary: 'Cạnh tranh gay gắt, phụ thuộc kinh tế, bất bình đẳng xã hội.'
-      },
-      {
-        icon: Scale,
-        title: 'Con dao hai lưỡi',
-        summary: 'Hội nhập vừa có lợi (cơ hội) vừa có hại (thách thức).'
-      }
-    ],
-    content: {
-      intro: 'Hội nhập là "con dao hai lưỡi", vừa có lợi (cơ hội) vừa có hại (thách thức).',
-      positive: {
-        title: 'Tác động tích cực',
-        items: [
-          'Mở rộng thị trường & Thu hút nguồn lực: Giúp hàng hóa bán ra thế giới, thu hút vốn và công nghệ mới.',
-          'Tạo động lực tái cơ cấu kinh tế: Chuyển dịch sang các ngành hiện đại, hiệu quả hơn. Ví dụ: Chuyển từ thuần nông sang công nghiệp, dịch vụ, xuất khẩu phần mềm.',
-          'Lợi ích cho người tiêu dùng: Được dùng hàng đa dạng, chất lượng, giá cạnh tranh. Ví dụ: Người Việt mua được iPhone, hàng Nhật, mỹ phẩm Hàn ngay tại VN.',
-          'Nâng cao vị thế và an ninh: Tăng uy tín chính trị, giữ vững hòa bình. Ví dụ: Có "anh lớn" chống lưng thì không ai dám động đến.'
-        ]
-      },
-      negative: {
-        title: 'Tác động tiêu cực',
-        items: [
-          'Làm gia tăng sự cạnh tranh: Doanh nghiệp yếu có thể phá sản.',
-          'Gia tăng sự phụ thuộc: Kinh tế dễ bị tổn thương khi thế giới biến động.',
-          'Bất bình đẳng xã hội: Khoảng cách giàu nghèo tăng lên (người có kỹ năng hưởng lợi nhiều hơn).',
-          'Nguy cơ môi trường & "Bãi rác công nghệ": Tiếp nhận công nghệ lạc hậu, gây ô nhiễm.',
-          'Xói mòn văn hóa & An ninh: Tăng nguy cơ khủng bố quốc tế, buôn lậu, tội phạm xuyên quốc gia, dịch bệnh, nhập cư bất hợp pháp.'
-        ]
-      }
-    }
-  },
-  'module-4': {
-    category: 'Chủ đề chính',
-    title: '"Biên giới mềm" – Tự chủ hay Phụ thuộc?',
-    readingTime: 10,
-    lastUpdated: '16/12/2024',
-    heroImage: '/images/anh4.png',
-    heroAlt: 'Modern city and economic development',
-    takeaways: [
-      {
-        icon: Target,
-        title: 'Vấn đề cốt lõi',
-        summary: 'Mở cửa để phát triển nhưng dễ bị lệ thuộc - mâu thuẫn cần giải quyết.'
-      },
-      {
-        icon: Scale,
-        title: 'Quan hệ biện chứng',
-        summary: 'Hội nhập và Tự chủ không đối lập mà là điều kiện của nhau.'
-      },
-      {
-        icon: Shield,
-        title: 'Giải pháp',
-        summary: 'Chủ động hội nhập, xây dựng nội lực, đa dạng hóa quan hệ.'
-      }
-    ],
-    content: {
-      coreIssue: '"Biên giới mềm" (hội nhập) xóa bỏ rào cản kinh tế, dòng vốn và hàng hóa di chuyển tự do. Việt Nam đứng trước mâu thuẫn: Mở cửa để phát triển nhưng dễ bị lệ thuộc.',
-      whyAccept: {
-        title: 'Tại sao phải chấp nhận "Biên giới mềm"?',
-        content: 'Việt Nam đang thiếu vốn, công nghệ, quản lý. Hội nhập là con đường duy nhất để huy động nguồn lực bên ngoài bù đắp cho thiếu hụt bên trong. Không hội nhập = Tự cô lập và tụt hậu.'
-      },
-      twoSides: {
-        opportunity: {
-          title: 'Cơ hội (Để Tự chủ)',
-          content: 'Tăng thực lực kinh tế nhờ vốn FDI, tiếp cận công nghệ mới, mở rộng thị trường xuất khẩu.'
-        },
-        risk: {
-          title: 'Nguy cơ (Gây Phụ thuộc)',
-          content: 'Doanh nghiệp nội thua ngay trên sân nhà; trở thành "bãi rác công nghệ"; nền kinh tế dễ tổn thương khi thế giới biến động.'
-        }
-      },
-      dialectical: {
-        title: 'Mối quan hệ biện chứng',
-        points: [
-          'Hội nhập và Tự chủ không đối lập mà là điều kiện của nhau.',
-          'Hội nhập là phương tiện: Dùng nguồn lực thế giới để xây dựng nội lực quốc gia.',
-          'Tự chủ là nền tảng: Nội lực mạnh mới giúp hội nhập bình đẳng, không bị hòa tan hay chi phối.'
-        ]
-      },
-      solutions: {
-        title: 'Điều kiện để không bị phụ thuộc (Giải pháp)',
-        items: [
-          'Nội lực là quyết định: Ưu tiên phát triển doanh nghiệp Việt, không để nền kinh tế phụ thuộc hoàn toàn vào khu vực FDI.',
-          'Đa dạng hóa: "Không bỏ trứng vào một giỏ". Đa dạng thị trường và đối tác để tránh lệ thuộc vào một quốc gia duy nhất.',
-          'Nắm công nghệ & Nhân lực: Chuyển từ gia công giá rẻ sang làm chủ công nghệ để thoát khỏi vị trí dưới đáy chuỗi giá trị.',
-          'Nhà nước kiến tạo: Giữ vững vai trò quản lý, tạo hành lang pháp lý để bảo vệ lợi ích quốc gia trong sân chơi quốc tế.'
-        ]
-      },
-      conclusion: 'Việt Nam chọn chủ động hội nhập để xây dựng nền kinh tế độc lập, tự chủ. Chúng ta hòa nhập (tuân thủ luật chơi) nhưng không hòa tan (giữ vững bản sắc và chủ quyền).'
-    }
-  },
-  'module-end': {
-    category: 'Kết thúc',
-    title: 'Tổng kết khóa học',
-    readingTime: 3,
-    lastUpdated: '16/12/2024',
-    heroImage: '/images/anh5.png',
-    heroAlt: 'Graduation and achievement',
-    takeaways: [
-      {
-        icon: CheckCircle,
-        title: 'Hoàn thành',
-        summary: 'Bạn đã hoàn thành toàn bộ nội dung khóa học.'
+        title: 'Khái niệm & Vị trí',
+        summary:
+          'Văn hóa là sự tổng hợp mọi phương thức sinh hoạt và sáng tạo của loài người, thuộc kiến trúc thượng tầng, quan hệ biện chứng với kinh tế và chính trị.'
       },
       {
         icon: Lightbulb,
-        title: 'Kiến thức',
-        summary: 'Hiểu rõ về hội nhập kinh tế và chiến lược của Việt Nam.'
+        title: 'Vai trò kép',
+        summary:
+          'Văn hóa vừa là mục tiêu (hướng tới Chân – Thiện – Mỹ), vừa là động lực và mặt trận của sự nghiệp cách mạng.'
       },
       {
-        icon: Target,
-        title: 'Tiếp theo',
-        summary: 'Thử sức với Quiz Game để kiểm tra kiến thức!'
+        icon: CheckCircle,
+        title: 'Ba tính chất',
+        summary:
+          'Nền văn hóa mới phải mang tính dân tộc, khoa học và đại chúng.'
       }
     ],
     content: {
-      congratulations: 'Chúc mừng bạn đã hoàn thành khóa học về Hội nhập Kinh tế Quốc tế của Việt Nam!',
-      summary: [
-        'Hiểu được bối cảnh toàn cầu hóa và khái niệm "biên giới mềm"',
-        'Nắm vững khái niệm hội nhập kinh tế quốc tế và tính tất yếu của nó',
-        'Phân tích được tác động tích cực và tiêu cực của hội nhập',
-        'Hiểu mối quan hệ biện chứng giữa hội nhập và tự chủ kinh tế',
-        'Biết các giải pháp để Việt Nam hội nhập hiệu quả mà không bị phụ thuộc'
-      ],
-      nextStep: 'Hãy thử sức với Quiz Game để kiểm tra và củng cố kiến thức của bạn!'
+      definition:
+        'Văn hóa theo nghĩa rộng là sự tổng hợp mọi phương thức sinh hoạt và sáng tạo của loài người nhằm thích ứng với nhu cầu sinh tồn. Văn hóa thuộc kiến trúc thượng tầng, có mối quan hệ biện chứng (tác động qua lại) mật thiết với chính trị, kinh tế và xã hội.',
+      roles: {
+        title: 'Tính chất và vai trò của văn hóa',
+        items: [
+          'Văn hóa vừa là mục tiêu: hướng tới quyền sống, quyền tự do, mưu cầu hạnh phúc và các giá trị Chân – Thiện – Mỹ.',
+          'Văn hóa vừa là động lực: thúc đẩy sự nghiệp cách mạng phát triển.',
+          'Văn hóa là một mặt trận: những người làm công tác văn hóa, nghệ thuật là chiến sĩ, dùng ngòi bút làm vũ khí sắc bén để phụng sự Tổ quốc và phục vụ nhân dân.',
+          'Mọi hoạt động văn hóa phải "từ trong quần chúng ra, về sâu trong quần chúng" — do nhân dân thẩm định và phục vụ nhân dân.'
+        ]
+      },
+      orientation: {
+        title: 'Định hướng xây dựng nền văn hóa mới',
+        content:
+          'Phải lấy văn hóa dân tộc làm gốc, giữ gìn bản sắc và cốt cách dân tộc. Đồng thời chủ động chắt lọc, tiếp thu tinh hoa văn hóa nhân loại (Đông, Tây, kim, cổ) để làm giàu cho văn hóa Việt Nam.'
+      },
+      threeQualities: {
+        title: 'Ba tính chất của nền văn hóa mới',
+        items: [
+          {
+            label: 'Tính dân tộc',
+            desc: 'Giữ gìn và phát huy bản sắc văn hóa, ngôn ngữ và truyền thống lịch sử dân tộc Việt Nam.'
+          },
+          {
+            label: 'Tính khoa học',
+            desc: 'Tiến bộ, hiện đại, phù hợp với quy luật phát triển của xã hội; chống mê tín dị đoan và các tư tưởng lạc hậu.'
+          },
+          {
+            label: 'Tính đại chúng',
+            desc: 'Phục vụ nhân dân rộng rãi, được nhân dân đón nhận và thẩm định — là văn hóa của quần chúng, vì quần chúng.'
+          }
+        ]
+      }
     }
   },
+
+  'module-2': {
+    category: 'Chương 6.2',
+    title: 'Tư tưởng Hồ Chí Minh về Đạo đức',
+    readingTime: 7,
+    lastUpdated: '16/04/2026',
+    heroImage: '/images/anh2.png',
+    heroAlt: 'Đạo đức cách mạng theo Tư tưởng Hồ Chí Minh',
+    takeaways: [
+      {
+        icon: Shield,
+        title: 'Đạo đức là gốc',
+        summary:
+          'Đức và tài phải thống nhất; đạo đức là nền tảng, là sức mạnh của người cách mạng. Không có đức thì tài mấy cũng vô dụng.'
+      },
+      {
+        icon: Target,
+        title: 'Bốn chuẩn mực cốt lõi',
+        summary:
+          'Trung với nước hiếu với dân; Cần kiệm liêm chính chí công vô tư; Thương yêu con người; Tinh thần quốc tế trong sáng.'
+      },
+      {
+        icon: CheckCircle,
+        title: 'Ba nguyên tắc xây dựng',
+        summary:
+          'Nói đi đôi với làm; Xây đi đôi với chống; Tu dưỡng đạo đức suốt đời.'
+      }
+    ],
+    content: {
+      role: {
+        title: 'Vai trò của đạo đức cách mạng',
+        content:
+          'Đạo đức là gốc, là nền tảng tinh thần và là sức mạnh của người cách mạng. Giữa "đức" và "tài" (hồng và chuyên) phải thống nhất, trong đó đạo đức là gốc — nếu không có đạo đức thì tài giỏi mấy cũng vô dụng, thậm chí có hại cho Đảng và nhân dân.'
+      },
+      fourStandards: {
+        title: 'Bốn chuẩn mực đạo đức cốt lõi',
+        items: [
+          {
+            label: 'Trung với nước, hiếu với dân',
+            desc: 'Phẩm chất bao trùm và quan trọng nhất. Không chỉ trung với vua như thời xưa, mà là trung thành với sự nghiệp dựng nước, giữ nước; thương dân, tin dân, lấy dân làm gốc.'
+          },
+          {
+            label: 'Cần, kiệm, liêm, chính, chí công vô tư',
+            desc: 'Nội dung cốt lõi gắn với sinh hoạt hằng ngày: siêng năng, tiết kiệm, trong sạch, thẳng thắn và luôn đặt lợi ích của Đảng, của dân tộc lên trên hết. Kiên quyết chống chủ nghĩa cá nhân.'
+          },
+          {
+            label: 'Thương yêu con người',
+            desc: 'Tình cảm rộng lớn dành cho những người nghèo khổ, bị áp bức. Sống với nhau có tình có nghĩa trên lập trường giai cấp công nhân.'
+          },
+          {
+            label: 'Tinh thần quốc tế trong sáng',
+            desc: 'Kết hợp nhuần nhuyễn giữa chủ nghĩa yêu nước chân chính và chủ nghĩa quốc tế vô sản; đoàn kết với nhân dân thế giới vì hòa bình và tiến bộ.'
+          }
+        ]
+      },
+      threePrinciples: {
+        title: 'Ba nguyên tắc xây dựng đạo đức',
+        items: [
+          {
+            label: 'Nói đi đôi với làm, nêu gương về đạo đức',
+            desc: 'Chống lại thói đạo đức giả. Cán bộ, đảng viên phải làm gương cho quần chúng noi theo — người lãnh đạo càng cao thì càng phải gương mẫu.'
+          },
+          {
+            label: 'Xây đi đôi với chống',
+            desc: 'Xây dựng đạo đức mới phải đi liền với đấu tranh chống lại cái xấu, cái ác — đặc biệt phải "quét sạch chủ nghĩa cá nhân".'
+          },
+          {
+            label: 'Tu dưỡng đạo đức suốt đời',
+            desc: 'Đạo đức không phải trên trời sa xuống mà do rèn luyện bền bỉ hằng ngày — "cũng như ngọc càng mài càng sáng, vàng càng luyện càng trong".'
+          }
+        ]
+      }
+    }
+  },
+
+  'module-3': {
+    category: 'Chương 6.3',
+    title: 'Tư tưởng Hồ Chí Minh về Con người',
+    readingTime: 6,
+    lastUpdated: '16/04/2026',
+    heroImage: '/images/anh3.png',
+    heroAlt: 'Chiến lược trồng người theo Tư tưởng Hồ Chí Minh',
+    takeaways: [
+      {
+        icon: Users,
+        title: 'Quan niệm lịch sử - cụ thể',
+        summary:
+          'Con người được nhìn nhận gắn với các mối quan hệ xã hội, thống nhất giữa thể lực, tâm lực và trí lực — không trừu tượng, siêu hình.'
+      },
+      {
+        icon: Target,
+        title: 'Mục tiêu & Động lực',
+        summary:
+          'Con người vừa là mục tiêu cuối cùng (giải phóng toàn diện), vừa là động lực quyết định thành công của cách mạng.'
+      },
+      {
+        icon: Lightbulb,
+        title: 'Chiến lược "Trồng người"',
+        summary:
+          '"Vì lợi ích trăm năm thì phải trồng người" — xây dựng con người phát triển toàn diện, vừa hồng vừa chuyên.'
+      }
+    ],
+    content: {
+      conception: {
+        title: 'Quan niệm về con người',
+        content:
+          'Hồ Chí Minh không nhìn nhận con người một cách trừu tượng, mà nhìn nhận con người lịch sử - cụ thể, gắn với các mối quan hệ xã hội (gia đình, giai cấp, dân tộc...) và mang tính thống nhất giữa thể lực, tâm lực và trí lực.'
+      },
+      goalAndForce: {
+        title: 'Con người là mục tiêu và động lực của cách mạng',
+        goalContent:
+          'Con người là mục tiêu: Mọi giai đoạn cách mạng đều nhằm mục đích cuối cùng là giải phóng dân tộc, giải phóng xã hội, giải phóng giai cấp và tiến tới giải phóng con người một cách toàn diện.',
+        forceContent:
+          'Con người là động lực: Con người là vốn quý nhất, là nhân tố quyết định thành công của sự nghiệp cách mạng. "Dễ trăm lần không dân cũng chịu, khó vạn lần dân liệu cũng xong."'
+      },
+      strategy: {
+        title: 'Chiến lược "Trồng người"',
+        quote:
+          'Vì lợi ích mười năm thì phải trồng cây, vì lợi ích trăm năm thì phải trồng người.',
+        content:
+          'Để xây dựng chủ nghĩa xã hội, trước hết cần có những con người xã hội chủ nghĩa. Nội dung xây dựng là hướng tới con người phát triển toàn diện (vừa hồng vừa chuyên), có đạo đức, ý thức làm chủ, có năng lực và lối sống cao đẹp.',
+        methods: [
+          'Thông qua giáo dục — từ nhà trường đến toàn xã hội',
+          'Sự tự tu dưỡng, rèn luyện bền bỉ của bản thân mỗi người',
+          'Nêu gương người tốt, việc tốt trong đời sống xã hội',
+          'Vai trò tổ chức và định hướng của Đảng và các đoàn thể'
+        ]
+      }
+    }
+  },
+
+  'module-4': {
+    category: 'Tổng hợp',
+    title: 'Mối liên hệ & Ý nghĩa thực tiễn',
+    readingTime: 5,
+    lastUpdated: '16/04/2026',
+    heroImage: '/images/anh4.png',
+    heroAlt: 'Tổng hợp tư tưởng Hồ Chí Minh về văn hóa, đạo đức và con người',
+    takeaways: [
+      {
+        icon: BookOpen,
+        title: 'Mối liên hệ biện chứng',
+        summary:
+          'Văn hóa, đạo đức và con người có mối quan hệ tương hỗ, thống nhất và quy định lẫn nhau trong tư tưởng Hồ Chí Minh.'
+      },
+      {
+        icon: Scale,
+        title: 'Ý nghĩa lý luận',
+        summary:
+          'Vận dụng sáng tạo chủ nghĩa Mác – Lênin vào điều kiện Việt Nam, bổ sung và làm phong phú lý luận cách mạng.'
+      },
+      {
+        icon: Shield,
+        title: 'Vận dụng thực tiễn',
+        summary:
+          'Kim chỉ nam cho sự nghiệp đổi mới, xây dựng văn hóa và phát triển con người Việt Nam toàn diện ngày nay.'
+      }
+    ],
+    content: {
+      relationship: {
+        title: 'Mối liên hệ biện chứng giữa Văn hóa, Đạo đức và Con người',
+        points: [
+          'Văn hóa là môi trường nuôi dưỡng đạo đức và hình thành nhân cách con người.',
+          'Đạo đức là hạt nhân của văn hóa tinh thần, là nền tảng của con người cách mạng.',
+          'Con người vừa là chủ thể sáng tạo văn hóa, vừa là sản phẩm của nền văn hóa đó.',
+          'Ba yếu tố tác động qua lại, bổ sung và thúc đẩy nhau trong quá trình phát triển cách mạng.'
+        ]
+      },
+      significance: {
+        title: 'Ý nghĩa lý luận và thực tiễn',
+        theoretical:
+          'Tư tưởng HCM về văn hóa, đạo đức và con người là sự vận dụng sáng tạo chủ nghĩa Mác – Lênin vào điều kiện cụ thể của Việt Nam, góp phần bổ sung và làm phong phú lý luận cách mạng.',
+        practical:
+          'Là kim chỉ nam cho Đảng và Nhà nước trong hoạch định chính sách phát triển văn hóa, giáo dục và xây dựng con người trong thời kỳ đổi mới và hội nhập quốc tế.'
+      },
+      application: {
+        title: 'Vận dụng trong thời đại ngày nay',
+        items: [
+          'Tiếp tục xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc theo tinh thần Nghị quyết Trung ương 5 (khóa VIII) và các nghị quyết tiếp theo của Đảng.',
+          'Đẩy mạnh giáo dục đạo đức cách mạng trong cán bộ, đảng viên; kiên quyết chống tham nhũng, tiêu cực và suy thoái về tư tưởng, đạo đức, lối sống.',
+          'Thực hiện chiến lược phát triển con người toàn diện — coi giáo dục và đào tạo là quốc sách hàng đầu.',
+          'Kết hợp giữ gìn bản sắc văn hóa dân tộc với tiếp thu có chọn lọc tinh hoa văn hóa nhân loại trong bối cảnh hội nhập quốc tế.'
+        ]
+      },
+      conclusion:
+        'Tư tưởng Hồ Chí Minh về văn hóa, đạo đức và con người không chỉ là di sản lý luận quý báu mà còn là ngọn đuốc soi đường cho dân tộc Việt Nam trong sự nghiệp xây dựng và bảo vệ Tổ quốc.'
+    }
+  },
+
   'module-ai': {
     category: 'Công cụ & Tham khảo',
-    title: 'AI Tools & Attribution',
+    title: 'AI Tools & Nguồn tham khảo',
     readingTime: 2,
-    lastUpdated: '18/12/2024',
+    lastUpdated: '16/04/2026',
     heroImage: null,
-    heroAlt: 'AI Tools and Attribution',
+    heroAlt: null,
     takeaways: [
       {
         icon: BookOpen,
         title: 'Công cụ AI',
-        summary: 'Danh sách các công cụ AI được sử dụng để tạo nội dung này.'
+        summary: 'Các công cụ AI hỗ trợ xây dựng nội dung khóa học HCM202.'
       },
       {
         icon: CheckCircle,
         title: 'Nguồn tham khảo',
-        summary: 'Tất cả nội dung được tham khảo từ tài liệu chính thức.'
+        summary: 'Tài liệu chính thức của môn Tư tưởng Hồ Chí Minh.'
       },
       {
         icon: Shield,
         title: 'Cam kết',
-        summary: 'Nội dung được tạo với mục đích giáo dục và học tập.'
+        summary: 'Sử dụng AI hoàn toàn vì mục đích giáo dục và học tập.'
       }
     ],
     content: {
-      introduction: 'Khóa học này được xây dựng với sự hỗ trợ của các công cụ Artificial Intelligence hiện đại, nhằm nâng cao chất lượng nội dung và trải nghiệm học tập.',
-      toolsUsed: [
-        'NotebookLM - Để tổng hợp, phân tích và tóm tắt tài liệu',
-        'Google Gemini - Để hỗ trợ viết và chỉnh sửa nội dung',
-        'GitHub Copilot - Để hỗ trợ lập trình React và JavaScript',
-        'Claude - Để soạn thảo và cải thiện nội dung chi tiết',
-        'CanvaAI - Để hỗ trợ thiết kế giao diện người dùng'
+      introduction:
+        'Khóa học này được xây dựng với sự hỗ trợ của các công cụ AI hiện đại, nhằm nâng cao chất lượng nội dung và trải nghiệm học tập môn HCM202 — Tư tưởng Hồ Chí Minh.',
+      tools: [
+        {
+          name: 'NotebookLM',
+          description:
+            'Tổng hợp, phân tích và tóm tắt tài liệu học tập về Tư tưởng Hồ Chí Minh từ nhiều nguồn tham khảo.',
+          promptLink: "https://notebooklm.google.com/notebook/6b1e622b-41bb-416b-84c8-1dc812f973fd"
+        },
+        {
+          name: 'Google Gemini',
+          description:
+            'Hỗ trợ viết, chỉnh sửa và phát triển nội dung các chương về văn hóa, đạo đức và con người.',
+          promptLink: "https://gemini.google.com/notebook/notebooks%2F6b1e622b-41bb-416b-84c8-1dc812f973fd"
+        },
+        {
+          name: 'GitHub Copilot (local)',
+          description:
+            'Hỗ trợ lập trình giao diện React và JavaScript cho trang web.',
+          promptLink: null
+        },
+        {
+          name: 'Notion',
+          description:
+            'Thực hiện Soạn thảo, ghi chú thông tin và cải thiện và kiểm tra độ chính xác nội dung học thuật.',
+          promptLink: "https://www.notion.so/QC9-note-34484c087ff580a88d80d2b1cb674fc0?source=copy_link"
+        }
       ],
-      sources: {
-        primary: 'Tài liệu chính của khóa học MLN122 (Kinh tế Chính trị)',
-        secondary: 'Các nguồn tham khảo chính thức về hội nhập kinh tế quốc tế'
-      },
-      teamCommitment: 'Nhóm Thomas Picasso cam kết rằng các công cụ AI được sử dụng hoàn toàn cho mục đích giáo dục, nâng cao chất lượng nội dung học tập, và không được dùng để vi phạm bản quyền hoặc quyền sở hữu trí tuệ của bất kỳ bên thứ ba nào.',
-      usage: 'Nội dung này được tạo ra nhằm mục đích cung cấp tài liệu học tập chất lượng cao cho học sinh và sinh viên. Tất cả thông tin được kiểm duyệt và cập nhật theo những phát triển mới nhất.'
+      references: [
+        {
+          title:
+            'Giáo trình Tư tưởng Hồ Chí Minh — Bộ Giáo dục và Đào tạo (2021)',
+          link: null
+        },
+        {
+          title: 'Quan điểm về vị trí, vai trò của văn hóa',
+          link: "https://hochiminh.vn/tu-tuong-dao-duc-ho-chi-minh/nghien-cuu-tu-tuong-dao-duc-ho-chi-minh/mot-so-quan-diem-cua-chu-tich-ho-chi-minh-ve-van-hoa-va-nang-tam-van-hoa-viet-nam-7895"
+        },
+        {
+          title: 'Tư tưởng Hô Chí Minh về đạo đức',
+          link: "https://hochiminh.vn/tu-tuong-dao-duc-ho-chi-minh/nghien-cuu-tu-tuong-dao-duc-ho-chi-minh/mot-so-quan-diem-cua-chu-tich-ho-chi-minh-ve-van-hoa-va-nang-tam-van-hoa-viet-nam-7895"
+        }
+      ],
+      teamCommitment:
+        'Nhóm 6 cam kết rằng các công cụ AI được sử dụng hoàn toàn cho mục đích hỗ trự, tham khảo và tổng hợp dữ liệu nhàmw nâng cao chất lượng nội dung, và không được dùng để vi phạm bản quyền hoặc quyền sở hữu trí tuệ của bất kỳ bên thứ ba nào.'
     }
   }
 };

@@ -1,14 +1,12 @@
 import React from 'react';
-import { 
-  BookOpen, 
-  CheckCircle, 
-  Lock, 
+import {
+  BookOpen,
+  CheckCircle,
+  Lock,
   Circle,
   GraduationCap,
   Menu,
-  X,
-  Gamepad2,
-  ExternalLink
+  X
 } from 'lucide-react';
 import '../styles/sidebar.css';
 
@@ -69,8 +67,8 @@ const Sidebar = ({
               <GraduationCap size={24} />
             </div>
             <div>
-              <div className="sidebar__logo-text">MLN122 - ThomasPicasso</div>
-              <div className="sidebar__logo-subtitle">Kinh tế chính trị</div>
+              <div className="sidebar__logo-text">HCM202_QC9 - Nhóm 6</div>
+              <div className="sidebar__logo-subtitle">Tư tưởng Hồ Chí Minh</div>
             </div>
           </div>
         </div>
@@ -90,7 +88,7 @@ const Sidebar = ({
               disabled={module.status === 'locked'}
             >
               <div className="module-item__number">
-                {index === 0 ? '★' : module.id === 'module-end' ? '🎓' : index}
+                {index === 0 ? '★' : module.id === 'module-ai' ? 'AI' : index}
               </div>
               <div className="module-item__content">
                 <div className="module-item__title">{module.title}</div>
@@ -102,22 +100,6 @@ const Sidebar = ({
             </button>
           ))}
 
-          {/* Game Link */}
-          <a 
-            href="https://healingthaomoc.my.canva.site/mln122" 
-            className="sidebar__game-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="sidebar__game-link-icon">
-              <Gamepad2 size={20} />
-            </div>
-            <div className="sidebar__game-link-content">
-              <span className="sidebar__game-link-title">🎮 Chơi Quiz Game</span>
-              <span className="sidebar__game-link-desc">Kiểm tra kiến thức của bạn</span>
-            </div>
-            <ExternalLink size={14} className="sidebar__game-link-arrow" />
-          </a>
         </nav>
 
         {/* Progress */}

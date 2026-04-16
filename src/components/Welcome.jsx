@@ -15,20 +15,20 @@ const Welcome = ({ onStart }) => {
         {/* Badge */}
         <div className="welcome__badge">
           <Sparkles size={16} className="welcome__badge-icon" />
-          <span>Khóa học Kinh tế Chính trị Mác-Lênin</span>
+          <span>Khóa học Tư tưởng Hồ Chí Minh — HCM202</span>
         </div>
 
         {/* Title */}
         <h1 className="welcome__title">
-          Hội nhập Kinh tế Quốc tế trong{' '}
-          <span className="welcome__title-accent">"Biên giới mềm"</span>
+          Tư tưởng Hồ Chí Minh về{' '}
+          <span className="welcome__title-accent">Văn hóa, Đạo đức và Con người</span>
         </h1>
 
         {/* Description */}
         <p className="welcome__description">
-          Khám phá chiến lược hội nhập kinh tế quốc tế của Việt Nam trong bối cảnh 
-          toàn cầu hóa. Tìm hiểu cách vừa phát triển kinh tế, vừa giữ vững độc lập 
-          và chủ quyền quốc gia.
+          Tìm hiểu hệ thống tư tưởng Hồ Chí Minh về văn hóa, đạo đức và con người —
+          nền tảng lý luận và kim chỉ nam cho sự nghiệp xây dựng, bảo vệ Tổ quốc
+          Việt Nam xã hội chủ nghĩa.
         </p>
 
         {/* Features */}
@@ -39,7 +39,7 @@ const Welcome = ({ onStart }) => {
             </div>
             <h3 className="welcome__feature-title">Nội dung chuyên sâu</h3>
             <p className="welcome__feature-text">
-              Lý luận và thực tiễn về hội nhập kinh tế quốc tế tại Việt Nam
+              Hệ thống tư tưởng HCM về văn hóa, đạo đức và con người theo giáo trình chính thức
             </p>
           </div>
 
@@ -49,7 +49,7 @@ const Welcome = ({ onStart }) => {
             </div>
             <h3 className="welcome__feature-title">Mục tiêu rõ ràng</h3>
             <p className="welcome__feature-text">
-              Hiểu rõ mối quan hệ giữa hội nhập và độc lập, tự chủ kinh tế
+              Nắm vững 4 chuẩn mực đạo đức, 3 tính chất văn hóa và chiến lược "trồng người"
             </p>
           </div>
 
@@ -57,9 +57,9 @@ const Welcome = ({ onStart }) => {
             <div className="welcome__feature-icon">
               <Users size={28} />
             </div>
-            <h3 className="welcome__feature-title">Ứng dụng thực tế</h3>
+            <h3 className="welcome__feature-title">Vận dụng thực tiễn</h3>
             <p className="welcome__feature-text">
-              Phân tích chiến lược phát triển kinh tế bền vững của Việt Nam
+              Liên hệ tư tưởng HCM với sự nghiệp đổi mới và phát triển con người toàn diện
             </p>
           </div>
         </div>
