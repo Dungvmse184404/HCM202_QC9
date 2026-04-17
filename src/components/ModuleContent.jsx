@@ -110,38 +110,6 @@ const ModuleContent = ({ module, moduleData, prevModule, nextModule, onNavigate 
           </>
         );
 
-      case 'module-4':
-        return (
-          <>
-            <ContentSection>
-              <SectionTitle>{moduleData.content.relationship.title}</SectionTitle>
-              <BulletList items={moduleData.content.relationship.points} />
-            </ContentSection>
-
-            <ContentSection>
-              <SectionTitle>{moduleData.content.significance.title}</SectionTitle>
-              <TwoColumn
-                positive={{
-                  title: 'Ý nghĩa lý luận',
-                  items: [moduleData.content.significance.theoretical]
-                }}
-                negative={{
-                  title: 'Ý nghĩa thực tiễn',
-                  items: [moduleData.content.significance.practical]
-                }}
-              />
-            </ContentSection>
-
-            <ContentSection>
-              <SectionTitle>{moduleData.content.application.title}</SectionTitle>
-              <BulletList items={moduleData.content.application.items} />
-              <HighlightBox title="✅ Kết luận" type="success">
-                {moduleData.content.conclusion}
-              </HighlightBox>
-            </ContentSection>
-          </>
-        );
-
       case 'module-end':
         return (
           <>

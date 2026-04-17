@@ -35,12 +35,6 @@ export const modules = [
     status: 'current'
   },
   {
-    id: 'module-4',
-    title: 'Mối liên hệ & Ý nghĩa thực tiễn',
-    description: 'Tổng hợp và vận dụng trong thời đại ngày nay',
-    status: 'current'
-  },
-  {
     id: 'module-end',
     title: 'Hiểu mình để vươn ra thế giới',
     description: 'Kết luận - ứng dụng tư tưởng HCM vào hành trình phát triển bản thân',
@@ -238,7 +232,7 @@ export const moduleContents = {
         quote:
           'Vì lợi ích mười năm thì phải trồng cây, vì lợi ích trăm năm thì phải trồng người.',
         content:
-          'Để xây dựng chủ nghĩa xã hội, trước hết cần có những con người xã hội chủ nghĩa. Nội dung xây dựng là hướng tới con người phát triển toàn diện (vừa hồng vừa chuyên), có đạo đức, ý thức làm chủ, có năng lực và lối sống cao đẹp.',
+          'Để xây dựng chủ nghĩa xã hội, trước hết cần có những con người xã hội chủ nghĩa. Nội dung xây dựng là hướng tới con người phát triển toàn diện (vừa hồng vừa chuyên), có đạo đức, ý thức làm chủ, có năng lực và lối sống cao đẹp. Ngay sau khi giành độc lập, ngày 8/9/1945, Chính phủ ban hành Sắc lệnh số 19 và 20 thành lập Nha Bình dân học vụ. Bác kêu gọi "người biết chữ dạy người chưa biết chữ".',
         methods: [
           'Thông qua giáo dục - từ nhà trường đến toàn xã hội',
           'Sự tự tu dưỡng, rèn luyện bền bỉ của bản thân mỗi người',
@@ -246,64 +240,6 @@ export const moduleContents = {
           'Vai trò tổ chức và định hướng của Đảng và các đoàn thể'
         ]
       }
-    }
-  },
-
-  'module-4': {
-    category: 'Tổng hợp',
-    title: 'Mối liên hệ & Ý nghĩa thực tiễn',
-    readingTime: 5,
-    lastUpdated: '16/04/2026',
-    heroImage: '/images/anh4.png',
-    heroAlt: 'Tổng hợp tư tưởng Hồ Chí Minh về văn hóa, đạo đức và con người',
-    takeaways: [
-      {
-        icon: BookOpen,
-        title: 'Mối liên hệ biện chứng',
-        summary:
-          'Văn hóa, đạo đức và con người có mối quan hệ tương hỗ, thống nhất và quy định lẫn nhau trong tư tưởng Hồ Chí Minh.'
-      },
-      {
-        icon: Scale,
-        title: 'Ý nghĩa lý luận',
-        summary:
-          'Vận dụng sáng tạo chủ nghĩa Mác - Lênin vào điều kiện Việt Nam, bổ sung và làm phong phú lý luận cách mạng.'
-      },
-      {
-        icon: Shield,
-        title: 'Vận dụng thực tiễn',
-        summary:
-          'Kim chỉ nam cho sự nghiệp đổi mới, xây dựng văn hóa và phát triển con người Việt Nam toàn diện ngày nay.'
-      }
-    ],
-    content: {
-      relationship: {
-        title: 'Mối liên hệ biện chứng giữa Văn hóa, Đạo đức và Con người',
-        points: [
-          'Văn hóa là môi trường nuôi dưỡng đạo đức và hình thành nhân cách con người.',
-          'Đạo đức là hạt nhân của văn hóa tinh thần, là nền tảng của con người cách mạng.',
-          'Con người vừa là chủ thể sáng tạo văn hóa, vừa là sản phẩm của nền văn hóa đó.',
-          'Ba yếu tố tác động qua lại, bổ sung và thúc đẩy nhau trong quá trình phát triển cách mạng.'
-        ]
-      },
-      significance: {
-        title: 'Ý nghĩa lý luận và thực tiễn',
-        theoretical:
-          'Tư tưởng HCM về văn hóa, đạo đức và con người là sự vận dụng sáng tạo chủ nghĩa Mác – Lênin vào điều kiện cụ thể của Việt Nam, góp phần bổ sung và làm phong phú lý luận cách mạng.',
-        practical:
-          'Là kim chỉ nam cho Đảng và Nhà nước trong hoạch định chính sách phát triển văn hóa, giáo dục và xây dựng con người trong thời kỳ đổi mới và hội nhập quốc tế.'
-      },
-      application: {
-        title: 'Vận dụng trong thời đại ngày nay',
-        items: [
-          'Tiếp tục xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc theo tinh thần Nghị quyết Trung ương 5 (khóa VIII) và các nghị quyết tiếp theo của Đảng.',
-          'Đẩy mạnh giáo dục đạo đức cách mạng trong cán bộ, đảng viên; kiên quyết chống tham nhũng, tiêu cực và suy thoái về tư tưởng, đạo đức, lối sống.',
-          'Thực hiện chiến lược phát triển con người toàn diện, coi giáo dục và đào tạo là quốc sách hàng đầu.',
-          'Kết hợp giữ gìn bản sắc văn hóa dân tộc với tiếp thu có chọn lọc tinh hoa văn hóa nhân loại trong bối cảnh hội nhập quốc tế.'
-        ]
-      },
-      conclusion:
-        'Tư tưởng Hồ Chí Minh về văn hóa, đạo đức và con người không chỉ là di sản lý luận quý báu mà còn là ngọn đuốc soi đường cho dân tộc Việt Nam trong sự nghiệp xây dựng và bảo vệ Tổ quốc.'
     }
   },
 
