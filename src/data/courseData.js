@@ -41,6 +41,12 @@ export const modules = [
     status: 'current'
   },
   {
+    id: 'module-end',
+    title: 'Hiểu mình để vươn ra thế giới',
+    description: 'Kết luận - ứng dụng tư tưởng HCM vào hành trình phát triển bản thân',
+    status: 'current'
+  },
+  {
     id: 'module-ai',
     title: 'AI Tools & Nguồn tham khảo',
     description: 'Công cụ AI được sử dụng và tài liệu tham khảo',
@@ -82,10 +88,10 @@ export const moduleContents = {
       roles: {
         title: 'Tính chất và vai trò của văn hóa',
         items: [
-          'Văn hóa vừa là mục tiêu: hướng tới quyền sống, quyền tự do, mưu cầu hạnh phúc và các giá trị Chân – Thiện – Mỹ.',
+          'Văn hóa vừa là mục tiêu: hướng tới quyền sống, quyền tự do, mưu cầu hạnh phúc và các giá trị Chân -Thiện - Mỹ.',
           'Văn hóa vừa là động lực: thúc đẩy sự nghiệp cách mạng phát triển.',
           'Văn hóa là một mặt trận: những người làm công tác văn hóa, nghệ thuật là chiến sĩ, dùng ngòi bút làm vũ khí sắc bén để phụng sự Tổ quốc và phục vụ nhân dân.',
-          'Mọi hoạt động văn hóa phải "từ trong quần chúng ra, về sâu trong quần chúng" — do nhân dân thẩm định và phục vụ nhân dân.'
+          'Mọi hoạt động văn hóa phải "từ trong quần chúng ra, về sâu trong quần chúng" - do nhân dân thẩm định và phục vụ nhân dân.'
         ]
       },
       orientation: {
@@ -106,7 +112,7 @@ export const moduleContents = {
           },
           {
             label: 'Tính đại chúng',
-            desc: 'Phục vụ nhân dân rộng rãi, được nhân dân đón nhận và thẩm định — là văn hóa của quần chúng, vì quần chúng.'
+            desc: 'Phục vụ nhân dân rộng rãi, được nhân dân đón nhận và thẩm định - là văn hóa của quần chúng, vì quần chúng.'
           }
         ]
       }
@@ -144,7 +150,7 @@ export const moduleContents = {
       role: {
         title: 'Vai trò của đạo đức cách mạng',
         content:
-          'Đạo đức là gốc, là nền tảng tinh thần và là sức mạnh của người cách mạng. Giữa "đức" và "tài" (hồng và chuyên) phải thống nhất, trong đó đạo đức là gốc — nếu không có đạo đức thì tài giỏi mấy cũng vô dụng, thậm chí có hại cho Đảng và nhân dân.'
+          'Đạo đức là gốc, là nền tảng tinh thần và là sức mạnh của người cách mạng. Giữa "đức" và "tài" (hồng và chuyên) phải thống nhất, trong đó đạo đức là gốc - nếu không có đạo đức thì tài giỏi mấy cũng vô dụng, thậm chí có hại cho Đảng và nhân dân.'
       },
       fourStandards: {
         title: 'Bốn chuẩn mực đạo đức cốt lõi',
@@ -172,15 +178,15 @@ export const moduleContents = {
         items: [
           {
             label: 'Nói đi đôi với làm, nêu gương về đạo đức',
-            desc: 'Chống lại thói đạo đức giả. Cán bộ, đảng viên phải làm gương cho quần chúng noi theo — người lãnh đạo càng cao thì càng phải gương mẫu.'
+            desc: 'Chống lại thói đạo đức giả. Cán bộ, đảng viên phải làm gương cho quần chúng noi theo - người lãnh đạo càng cao thì càng phải gương mẫu.'
           },
           {
             label: 'Xây đi đôi với chống',
-            desc: 'Xây dựng đạo đức mới phải đi liền với đấu tranh chống lại cái xấu, cái ác — đặc biệt phải "quét sạch chủ nghĩa cá nhân".'
+            desc: 'Xây dựng đạo đức mới phải đi liền với đấu tranh chống lại cái xấu, cái ác - đặc biệt phải "quét sạch chủ nghĩa cá nhân".'
           },
           {
             label: 'Tu dưỡng đạo đức suốt đời',
-            desc: 'Đạo đức không phải trên trời sa xuống mà do rèn luyện bền bỉ hằng ngày — "cũng như ngọc càng mài càng sáng, vàng càng luyện càng trong".'
+            desc: 'Đạo đức không phải trên trời sa xuống mà do rèn luyện bền bỉ hằng ngày - "cũng như ngọc càng mài càng sáng, vàng càng luyện càng trong".'
           }
         ]
       }
@@ -199,7 +205,7 @@ export const moduleContents = {
         icon: Users,
         title: 'Quan niệm lịch sử - cụ thể',
         summary:
-          'Con người được nhìn nhận gắn với các mối quan hệ xã hội, thống nhất giữa thể lực, tâm lực và trí lực — không trừu tượng, siêu hình.'
+          'Con người được nhìn nhận gắn với các mối quan hệ xã hội, thống nhất giữa thể lực, tâm lực và trí lực - không trừu tượng, siêu hình.'
       },
       {
         icon: Target,
@@ -211,7 +217,7 @@ export const moduleContents = {
         icon: Lightbulb,
         title: 'Chiến lược "Trồng người"',
         summary:
-          '"Vì lợi ích trăm năm thì phải trồng người" — xây dựng con người phát triển toàn diện, vừa hồng vừa chuyên.'
+          '"Vì lợi ích trăm năm thì phải trồng người" - xây dựng con người phát triển toàn diện, vừa hồng vừa chuyên.'
       }
     ],
     content: {
@@ -234,7 +240,7 @@ export const moduleContents = {
         content:
           'Để xây dựng chủ nghĩa xã hội, trước hết cần có những con người xã hội chủ nghĩa. Nội dung xây dựng là hướng tới con người phát triển toàn diện (vừa hồng vừa chuyên), có đạo đức, ý thức làm chủ, có năng lực và lối sống cao đẹp.',
         methods: [
-          'Thông qua giáo dục — từ nhà trường đến toàn xã hội',
+          'Thông qua giáo dục - từ nhà trường đến toàn xã hội',
           'Sự tự tu dưỡng, rèn luyện bền bỉ của bản thân mỗi người',
           'Nêu gương người tốt, việc tốt trong đời sống xã hội',
           'Vai trò tổ chức và định hướng của Đảng và các đoàn thể'
@@ -261,7 +267,7 @@ export const moduleContents = {
         icon: Scale,
         title: 'Ý nghĩa lý luận',
         summary:
-          'Vận dụng sáng tạo chủ nghĩa Mác – Lênin vào điều kiện Việt Nam, bổ sung và làm phong phú lý luận cách mạng.'
+          'Vận dụng sáng tạo chủ nghĩa Mác - Lênin vào điều kiện Việt Nam, bổ sung và làm phong phú lý luận cách mạng.'
       },
       {
         icon: Shield,
@@ -292,12 +298,78 @@ export const moduleContents = {
         items: [
           'Tiếp tục xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc theo tinh thần Nghị quyết Trung ương 5 (khóa VIII) và các nghị quyết tiếp theo của Đảng.',
           'Đẩy mạnh giáo dục đạo đức cách mạng trong cán bộ, đảng viên; kiên quyết chống tham nhũng, tiêu cực và suy thoái về tư tưởng, đạo đức, lối sống.',
-          'Thực hiện chiến lược phát triển con người toàn diện — coi giáo dục và đào tạo là quốc sách hàng đầu.',
+          'Thực hiện chiến lược phát triển con người toàn diện, coi giáo dục và đào tạo là quốc sách hàng đầu.',
           'Kết hợp giữ gìn bản sắc văn hóa dân tộc với tiếp thu có chọn lọc tinh hoa văn hóa nhân loại trong bối cảnh hội nhập quốc tế.'
         ]
       },
       conclusion:
         'Tư tưởng Hồ Chí Minh về văn hóa, đạo đức và con người không chỉ là di sản lý luận quý báu mà còn là ngọn đuốc soi đường cho dân tộc Việt Nam trong sự nghiệp xây dựng và bảo vệ Tổ quốc.'
+    }
+  },
+
+  'module-end': {
+    category: 'Kết luận',
+    title: 'Hiểu mình để vươn ra thế giới',
+    readingTime: 4,
+    lastUpdated: '16/04/2026',
+    heroImage: '/images/anh5.png',
+    heroAlt: 'Hiểu mình để vươn ra thế giới',
+    takeaways: [
+      {
+        icon: BookOpen,
+        title: '"Tấm hộ chiếu" bản sắc',
+        summary:
+          'Văn hóa là phương thức sinh tồn - hiểu cội nguồn, ngôn ngữ và các giá trị tinh thần là nền tảng để đi xa mà không lạc lối.'
+      },
+      {
+        icon: Shield,
+        title: '"Bộ khung" định hướng',
+        summary:
+          'Đạo đức là gốc - biết rõ hệ giá trị của bản thân (chính trực, tự trọng, trách nhiệm) giúp định hướng trong mọi hoàn cảnh.'
+      },
+      {
+        icon: Users,
+        title: '"Chủ thể" tự trồng mình',
+        summary:
+          '"Trồng người" bắt đầu từ chính mình - biết mình mạnh ở đâu (Chuyên) và cần rèn luyện thêm ở đâu (Hồng).'
+      }
+    ],
+    content: {
+      intro:
+        'Từ ba trụ cột tư tưởng Hồ Chí Minh - văn hóa, đạo đức và con người - có thể rút ra một thông điệp cốt lõi cho mỗi cá nhân trong thời đại toàn cầu hóa: Muốn vươn ra thế giới, trước hết phải hiểu chính mình.',
+      sections: [
+        {
+          subject: 'Văn hóa',
+          metaphor: '"Tấm hộ chiếu" bản sắc',
+          description:
+            'Trong tư tưởng Hồ Chí Minh, văn hóa không chỉ là kiến thức hay nghệ thuật - đó là phương thức sinh tồn, cách một dân tộc ứng xử với thế giới và với chính mình.',
+          quote: null,
+          insight:
+            'Hiểu mình qua văn hóa là hiểu về cội nguồn, ngôn ngữ và các giá trị tinh thần của dân tộc. Đó là tấm hộ chiếu giúp bạn hòa nhập với thế giới mà không hòa tan - giữ được bản sắc giữa muôn vàn luồng văn hóa bên ngoài.'
+        },
+        {
+          subject: 'Đạo đức',
+          metaphor: '"Bộ khung" định hướng',
+          description:
+            'Hồ Chí Minh khẳng định đạo đức là gốc của mọi hành động. Không có đạo đức, tài năng trở thành con dao hai lưỡi.',
+          quote:
+            'Có tài mà không có đức là người vô dụng. Có đức mà không có tài thì làm việc gì cũng khó.',
+          insight:
+            'Hiểu mình qua đạo đức là biết rõ hệ giá trị của bản thân: sự chính trực, lòng tự trọng và tinh thần trách nhiệm. Đó là bộ khung nội tâm giúp bạn đưa ra quyết định đúng đắn ngay cả khi không ai nhìn.'
+        },
+        {
+          subject: 'Con người',
+          metaphor: '"Chủ thể" tự trồng mình',
+          description:
+            'Chiến lược "trồng người" của Bác hướng tới sự phát triển toàn diện - vừa hồng (đạo đức, tư tưởng) vừa chuyên (năng lực, kỹ năng). Và quá trình đó bắt đầu từ chính mỗi cá nhân.',
+          quote:
+            'Vì lợi ích mười năm thì phải trồng cây, vì lợi ích trăm năm thì phải trồng người.',
+          insight:
+            '"Trồng người" không chỉ là trách nhiệm của xã hội - đó là việc của chính bạn. Hiểu mình là bước đầu tiên: biết mình mạnh ở đâu (năng lực - "Chuyên") và cần rèn luyện thêm ở đâu (đạo đức, thái độ - "Hồng").'
+        }
+      ],
+      closing:
+        'Văn hóa cho bạn bản sắc. Đạo đức cho bạn phương hướng. Sự tự hiểu mình cho bạn sức mạnh nội tâm. Đó là hành trang để mỗi người Việt Nam tự tin bước ra thế giới - hòa nhập nhưng không hòa tan.'
     }
   },
 
@@ -327,7 +399,7 @@ export const moduleContents = {
     ],
     content: {
       introduction:
-        'Khóa học này được xây dựng với sự hỗ trợ của các công cụ AI hiện đại, nhằm nâng cao chất lượng nội dung và trải nghiệm học tập môn HCM202 — Tư tưởng Hồ Chí Minh.',
+        'Khóa học này được xây dựng với sự hỗ trợ của các công cụ AI hiện đại, nhằm nâng cao chất lượng nội dung và trải nghiệm học tập môn HCM202 - Tư tưởng Hồ Chí Minh.',
       tools: [
         {
           name: 'NotebookLM',
@@ -357,8 +429,8 @@ export const moduleContents = {
       references: [
         {
           title:
-            'Giáo trình Tư tưởng Hồ Chí Minh — Bộ Giáo dục và Đào tạo (2021)',
-          link: null
+            'Giáo trình Tư tưởng Hồ Chí Minh - Bộ Giáo dục và Đào tạo',
+          link: "https://drive.google.com/file/d/1IcRiR-SGJ0s6omK8pE6TfDtzvVehSRyn/view"
         },
         {
           title: 'Quan điểm về vị trí, vai trò của văn hóa',

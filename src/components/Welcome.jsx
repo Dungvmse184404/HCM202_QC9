@@ -15,7 +15,7 @@ const Welcome = ({ onStart }) => {
         {/* Badge */}
         <div className="welcome__badge">
           <Sparkles size={16} className="welcome__badge-icon" />
-          <span>Khóa học Tư tưởng Hồ Chí Minh — HCM202</span>
+          <span>Khóa học Tư tưởng Hồ Chí Minh - HCM202</span>
         </div>
 
         {/* Title */}
@@ -26,7 +26,7 @@ const Welcome = ({ onStart }) => {
 
         {/* Description */}
         <p className="welcome__description">
-          Tìm hiểu hệ thống tư tưởng Hồ Chí Minh về văn hóa, đạo đức và con người —
+          Tìm hiểu hệ thống tư tưởng Hồ Chí Minh về văn hóa, đạo đức và con người -
           nền tảng lý luận và kim chỉ nam cho sự nghiệp xây dựng, bảo vệ Tổ quốc
           Việt Nam xã hội chủ nghĩa.
         </p>

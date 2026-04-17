@@ -17,8 +17,9 @@ const Sidebar = ({
   isOpen, 
   onToggle 
 }) => {
-  const completedCount = modules.filter(m => m.status === 'completed').length;
-  const progressPercent = (completedCount / modules.length) * 100;
+  const contentModules = modules.filter(m => m.id !== 'welcome' && m.id !== 'module-ai');
+  const completedCount = contentModules.filter(m => m.status === 'completed').length;
+  const progressPercent = (completedCount / contentModules.length) * 100;
 
   const getStatusIcon = (status) => {
     switch (status) {
@@ -88,7 +89,7 @@ const Sidebar = ({
               disabled={module.status === 'locked'}
             >
               <div className="module-item__number">
-                {index === 0 ? '★' : module.id === 'module-ai' ? 'AI' : index}
+                {index === 0 ? '★' : module.id === 'module-end' ? '🎓' : module.id === 'module-ai' ? 'AI' : index}
               </div>
               <div className="module-item__content">
                 <div className="module-item__title">{module.title}</div>
@@ -106,7 +107,7 @@ const Sidebar = ({
         <div className="sidebar__progress">
           <div className="sidebar__progress-label">
             <span>Tiến độ học tập</span>
-            <span>{completedCount}/{modules.length} hoàn thành</span>
+            <span>{completedCount}/{contentModules.length} hoàn thành</span>
           </div>
           <div className="sidebar__progress-bar">
             <div 

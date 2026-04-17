@@ -142,6 +142,40 @@ const ModuleContent = ({ module, moduleData, prevModule, nextModule, onNavigate 
           </>
         );
 
+      case 'module-end':
+        return (
+          <>
+            <ContentSection>
+              <Paragraph>
+                <strong>{moduleData.content.intro}</strong>
+              </Paragraph>
+            </ContentSection>
+
+            {moduleData.content.sections.map((section, i) => (
+              <ContentSection key={i}>
+                <SectionTitle>
+                  {section.subject} - {section.metaphor}
+                </SectionTitle>
+                <Paragraph>{section.description}</Paragraph>
+
+                {section.quote && (
+                  <HighlightBox title="💬 Lời Bác Hồ" type="info">
+                    "{section.quote}"
+                  </HighlightBox>
+                )}
+
+                <Paragraph>{section.insight}</Paragraph>
+              </ContentSection>
+            ))}
+
+            <ContentSection>
+              <Paragraph>
+                <strong>{moduleData.content.closing}</strong>
+              </Paragraph>
+            </ContentSection>
+          </>
+        );
+
       case 'module-ai':
         return (
           <>
