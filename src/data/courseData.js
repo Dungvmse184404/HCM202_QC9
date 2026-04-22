@@ -6,7 +6,8 @@ import {
   Target,
   Users,
   Scale,
-  Heart
+  Heart,
+  AlertTriangle
 } from 'lucide-react';
 
 export const modules = [
@@ -18,26 +19,26 @@ export const modules = [
   },
   {
     id: 'module-1',
-    title: 'Tư tưởng HCM về Văn hóa',
-    description: 'Khái niệm, vai trò và định hướng xây dựng nền văn hóa mới',
+    title: 'Hệ thống khái niệm',
+    description: 'Tôn giáo, tín ngưỡng và mê tín dị đoan theo quan điểm Mác - Lênin',
     status: 'current'
   },
   {
     id: 'module-2',
-    title: 'Tư tưởng HCM về Đạo đức',
-    description: 'Chuẩn mực đạo đức cách mạng và nguyên tắc xây dựng',
+    title: 'Nguồn gốc của Tôn giáo',
+    description: 'Ba nguồn gốc: kinh tế - xã hội, tâm lý và nhận thức',
     status: 'current'
   },
   {
     id: 'module-3',
-    title: 'Tư tưởng HCM về Con người',
-    description: 'Quan niệm về con người và chiến lược "trồng người"',
+    title: 'Tôn giáo tại Việt Nam',
+    description: 'Đặc điểm và chính sách của Đảng, Nhà nước về tôn giáo',
     status: 'current'
   },
   {
     id: 'module-end',
-    title: 'Hiểu mình để vươn ra thế giới',
-    description: 'Kết luận - ứng dụng tư tưởng HCM vào hành trình phát triển bản thân',
+    title: 'Mê tín dị đoan ở người trẻ',
+    description: 'Phân tích vấn đề thực tế và giải pháp đề xuất',
     status: 'current'
   },
   {
@@ -50,63 +51,85 @@ export const modules = [
 
 export const moduleContents = {
   'module-1': {
-    category: 'Chương 6.1',
-    title: 'Tư tưởng Hồ Chí Minh về Văn hóa',
-    readingTime: 6,
-    lastUpdated: '16/04/2026',
+    category: 'Chương 6 - Mục 1',
+    title: 'Hệ thống khái niệm theo quan điểm Chủ nghĩa Mác - Lênin',
+    readingTime: 5,
+    lastUpdated: '22/04/2026',
     heroImage: '/images/anh1.png',
-    heroAlt: 'Văn hóa dân tộc Việt Nam',
+    heroAlt: 'Tôn giáo và tín ngưỡng trong xã hội',
     takeaways: [
       {
         icon: BookOpen,
-        title: 'Khái niệm & Vị trí',
+        title: 'Tôn giáo',
         summary:
-          'Văn hóa là sự tổng hợp mọi phương thức sinh hoạt và sáng tạo của loài người, thuộc kiến trúc thượng tầng, quan hệ biện chứng với kinh tế và chính trị.'
+          'Là hình thái ý thức xã hội phản ánh hư ảo hiện thực khách quan. Cần 5 yếu tố: Đấng tối cao, giáo lý/giáo luật, nghi lễ, cơ sở thờ tự và cộng đồng tín đồ.'
       },
       {
-        icon: Lightbulb,
-        title: 'Vai trò kép',
+        icon: Heart,
+        title: 'Tín ngưỡng',
         summary:
-          'Văn hóa vừa là mục tiêu (hướng tới Chân – Thiện – Mỹ), vừa là động lực và mặt trận của sự nghiệp cách mạng.'
+          'Hệ thống niềm tin, ngưỡng mộ trước các thế lực linh thiêng - gắn kết cộng đồng, bảo tồn văn hóa bản địa, được pháp luật bảo hộ.'
       },
       {
-        icon: CheckCircle,
-        title: 'Ba tính chất',
+        icon: AlertTriangle,
+        title: 'Mê tín dị đoan',
         summary:
-          'Nền văn hóa mới phải mang tính dân tộc, khoa học và đại chúng.'
+          'Niềm tin mù quáng, phản khoa học dẫn đến hành vi cực đoan. Gây tổn hại cá nhân và xã hội - bị pháp luật nghiêm cấm.'
       }
     ],
     content: {
-      definition:
-        'Văn hóa theo nghĩa rộng là sự tổng hợp mọi phương thức sinh hoạt và sáng tạo của loài người nhằm thích ứng với nhu cầu sinh tồn. Văn hóa thuộc kiến trúc thượng tầng, có mối quan hệ biện chứng (tác động qua lại) mật thiết với chính trị, kinh tế và xã hội.',
-      roles: {
-        title: 'Tính chất và vai trò của văn hóa',
+      definitions: {
+        title: 'Các khái niệm cơ bản',
         items: [
-          'Văn hóa vừa là mục tiêu: hướng tới quyền sống, quyền tự do, mưu cầu hạnh phúc và các giá trị Chân -Thiện - Mỹ.',
-          'Văn hóa vừa là động lực: thúc đẩy sự nghiệp cách mạng phát triển.',
-          'Văn hóa là một mặt trận: những người làm công tác văn hóa, nghệ thuật là chiến sĩ, dùng ngòi bút làm vũ khí sắc bén để phụng sự Tổ quốc và phục vụ nhân dân.',
-          'Mọi hoạt động văn hóa phải "từ trong quần chúng ra, về sâu trong quần chúng" - do nhân dân thẩm định và phục vụ nhân dân.'
+          {
+            label: 'Tôn giáo',
+            desc: 'Là một hình thái ý thức xã hội phản ánh hư ảo hiện thực khách quan vào đầu óc con người. Trong đó, các lực lượng tự nhiên và xã hội trở thành siêu nhiên, thần bí. Một tôn giáo hoàn chỉnh cần 5 yếu tố: Đấng tối cao, giáo lý/giáo luật, nghi lễ, cơ sở thờ tự và cộng đồng tín đồ.'
+          },
+          {
+            label: 'Tín ngưỡng',
+            desc: 'Hệ thống niềm tin, sự ngưỡng mộ và cách thức thể hiện niềm tin trước các thế lực thần thánh, linh thiêng để cầu mong sự che chở.'
+          },
+          {
+            label: 'Mê tín',
+            desc: 'Niềm tin mê muội, viển vông, không dựa trên cơ sở khoa học (tin vào các mối quan hệ nhân quả không có thật).'
+          },
+          {
+            label: 'Dị đoan',
+            desc: 'Sự suy đoán, hành động tùy tiện, sai lệch các chuẩn mực bình thường trong cuộc sống.'
+          },
+          {
+            label: 'Mê tín dị đoan',
+            desc: 'Niềm tin mù quáng dẫn đến hành vi cực đoan, sai lệch văn hóa, đạo đức và pháp luật, gây tổn hại cho cá nhân và xã hội.'
+          }
         ]
       },
-      orientation: {
-        title: 'Định hướng xây dựng nền văn hóa mới',
-        content:
-          'Phải lấy văn hóa dân tộc làm gốc, giữ gìn bản sắc và cốt cách dân tộc. Đồng thời chủ động chắt lọc, tiếp thu tinh hoa văn hóa nhân loại (Đông, Tây, kim, cổ) để làm giàu cho văn hóa Việt Nam.'
-      },
-      threeQualities: {
-        title: 'Ba tính chất của nền văn hóa mới',
-        items: [
+      comparisonTable: {
+        title: 'Phân biệt Tôn giáo, Tín ngưỡng và Mê tín dị đoan',
+        headers: ['Tiêu chí', 'Tôn giáo', 'Tín ngưỡng', 'Mê tín dị đoan'],
+        rows: [
           {
-            label: 'Tính dân tộc',
-            desc: 'Giữ gìn và phát huy bản sắc văn hóa, ngôn ngữ và truyền thống lịch sử dân tộc Việt Nam.'
+            criteria: 'Bản chất niềm tin',
+            tonGiao: 'Có hệ thống giáo thuyết, thế giới quan bài bản.',
+            tinNguong: 'Sự ngưỡng mộ, cầu mong che chở (thường mang tính bản địa).',
+            meTinDiDoan: 'Mù quáng, viển vông, phản khoa học.'
           },
           {
-            label: 'Tính khoa học',
-            desc: 'Tiến bộ, hiện đại, phù hợp với quy luật phát triển của xã hội; chống mê tín dị đoan và các tư tưởng lạc hậu.'
+            criteria: 'Tính tổ chức',
+            tonGiao: 'Rất cao (Giáo hội, nhân sự điều hành).',
+            tinNguong: 'Thấp, mang tính tự phát, gắn với phong tục.',
+            meTinDiDoan: 'Không có hệ thống, tùy tiện, rời rạc.'
           },
           {
-            label: 'Tính đại chúng',
-            desc: 'Phục vụ nhân dân rộng rãi, được nhân dân đón nhận và thẩm định - là văn hóa của quần chúng, vì quần chúng.'
+            criteria: 'Giá trị xã hội',
+            tonGiao: 'Bảo tồn văn hóa, đạo đức, giáo dục cộng đồng.',
+            tinNguong: 'Gắn kết cộng đồng, "Uống nước nhớ nguồn".',
+            meTinDiDoan: 'Tiêu cực, gây tốn kém, u mê, trục lợi.'
+          },
+          {
+            criteria: 'Pháp luật',
+            tonGiao: 'Được tôn trọng và bảo hộ.',
+            tinNguong: 'Được tôn trọng và bảo hộ.',
+            meTinDiDoan: 'Nghiêm cấm và xử lý.'
           }
         ]
       }
@@ -114,198 +137,192 @@ export const moduleContents = {
   },
 
   'module-2': {
-    category: 'Chương 6.2',
-    title: 'Tư tưởng Hồ Chí Minh về Đạo đức',
-    readingTime: 7,
-    lastUpdated: '16/04/2026',
+    category: 'Chương 6 - Mục 2',
+    title: 'Nguồn gốc của Tôn giáo theo quan điểm Mác - Lênin',
+    readingTime: 4,
+    lastUpdated: '22/04/2026',
     heroImage: '/images/anh2.png',
-    heroAlt: 'Đạo đức cách mạng theo Tư tưởng Hồ Chí Minh',
+    heroAlt: 'Nguồn gốc của tôn giáo',
     takeaways: [
       {
-        icon: Shield,
-        title: 'Đạo đức là gốc',
+        icon: Scale,
+        title: 'Nguồn gốc Kinh tế - Xã hội',
         summary:
-          'Đức và tài phải thống nhất; đạo đức là nền tảng, là sức mạnh của người cách mạng. Không có đức thì tài mấy cũng vô dụng.'
+          'Sự bất lực trước thiên nhiên của người nguyên thủy và trước các lực lượng áp bức, bóc lột trong xã hội có giai cấp.'
       },
       {
-        icon: Target,
-        title: 'Bốn chuẩn mực cốt lõi',
+        icon: Heart,
+        title: 'Nguồn gốc Tâm lý',
         summary:
-          'Trung với nước hiếu với dân; Cần kiệm liêm chính chí công vô tư; Thương yêu con người; Tinh thần quốc tế trong sáng.'
+          'Sợ hãi, lo âu trước rủi ro và mong muốn bình an. Cũng xuất phát từ lòng biết ơn các anh hùng, người có công với dân tộc.'
       },
       {
-        icon: CheckCircle,
-        title: 'Ba nguyên tắc xây dựng',
+        icon: Lightbulb,
+        title: 'Nguồn gốc Nhận thức',
         summary:
-          'Nói đi đôi với làm; Xây đi đôi với chống; Tu dưỡng đạo đức suốt đời.'
+          'Khoa học chưa phát triển, trình độ dân trí thấp dẫn đến việc giải thích thế giới bằng sức mạnh thần bí.'
       }
     ],
     content: {
-      role: {
-        title: 'Vai trò của đạo đức cách mạng',
-        content:
-          'Đạo đức là gốc, là nền tảng tinh thần và là sức mạnh của người cách mạng. Giữa "đức" và "tài" (hồng và chuyên) phải thống nhất, trong đó đạo đức là gốc - nếu không có đạo đức thì tài giỏi mấy cũng vô dụng, thậm chí có hại cho Đảng và nhân dân.'
-      },
-      fourStandards: {
-        title: 'Bốn chuẩn mực đạo đức cốt lõi',
+      economic: {
+        title: '1. Nguồn gốc Kinh tế - Xã hội',
         items: [
-          {
-            label: 'Trung với nước, hiếu với dân',
-            desc: 'Phẩm chất bao trùm và quan trọng nhất. Không chỉ trung với vua như thời xưa, mà là trung thành với sự nghiệp dựng nước, giữ nước; thương dân, tin dân, lấy dân làm gốc.'
-          },
-          {
-            label: 'Cần, kiệm, liêm, chính, chí công vô tư',
-            desc: 'Nội dung cốt lõi gắn với sinh hoạt hằng ngày: siêng năng, tiết kiệm, trong sạch, thẳng thắn và luôn đặt lợi ích của Đảng, của dân tộc lên trên hết. Kiên quyết chống chủ nghĩa cá nhân.'
-          },
-          {
-            label: 'Thương yêu con người',
-            desc: 'Tình cảm rộng lớn dành cho những người nghèo khổ, bị áp bức. Sống với nhau có tình có nghĩa trên lập trường giai cấp công nhân.'
-          },
-          {
-            label: 'Tinh thần quốc tế trong sáng',
-            desc: 'Kết hợp nhuần nhuyễn giữa chủ nghĩa yêu nước chân chính và chủ nghĩa quốc tế vô sản; đoàn kết với nhân dân thế giới vì hòa bình và tiến bộ.'
-          }
+          'Sự bất lực trước thiên nhiên hùng vĩ của người nguyên thủy.',
+          'Sự bất lực trước các lực lượng xã hội áp bức, bóc lột trong xã hội có giai cấp.'
         ]
       },
-      threePrinciples: {
-        title: 'Ba nguyên tắc xây dựng đạo đức',
+      psychological: {
+        title: '2. Nguồn gốc Tâm lý',
         items: [
-          {
-            label: 'Nói đi đôi với làm, nêu gương về đạo đức',
-            desc: 'Chống lại thói đạo đức giả. Cán bộ, đảng viên phải làm gương cho quần chúng noi theo - người lãnh đạo càng cao thì càng phải gương mẫu.'
-          },
-          {
-            label: 'Xây đi đôi với chống',
-            desc: 'Xây dựng đạo đức mới phải đi liền với đấu tranh chống lại cái xấu, cái ác - đặc biệt phải "quét sạch chủ nghĩa cá nhân".'
-          },
-          {
-            label: 'Tu dưỡng đạo đức suốt đời',
-            desc: 'Đạo đức không phải trên trời sa xuống mà do rèn luyện bền bỉ hằng ngày - "cũng như ngọc càng mài càng sáng, vàng càng luyện càng trong".'
-          }
+          'Sự sợ hãi, lo âu trước rủi ro, bệnh tật hoặc các sự cố bất ngờ.',
+          'Tâm lý mong muốn bình an khi làm việc lớn (ma chay, cưới hỏi, kinh doanh).',
+          'Tình cảm tích cực: Lòng biết ơn các anh hùng dân tộc, người có công (thờ Thành hoàng, Anh hùng dân tộc).'
+        ]
+      },
+      cognitive: {
+        title: '3. Nguồn gốc Nhận thức',
+        items: [
+          'Khoa học chưa phát triển dẫn đến việc giải thích thế giới bằng sức mạnh thần bí.',
+          'Trình độ dân trí thấp là "mảnh đất" cho tôn giáo và mê tín tồn tại.'
         ]
       }
     }
   },
 
   'module-3': {
-    category: 'Chương 6.3',
-    title: 'Tư tưởng Hồ Chí Minh về Con người',
-    readingTime: 6,
-    lastUpdated: '16/04/2026',
+    category: 'Chương 6 - Mục 3',
+    title: 'Tôn giáo tại Việt Nam và Chính sách của Đảng, Nhà nước',
+    readingTime: 5,
+    lastUpdated: '22/04/2026',
     heroImage: '/images/anh3.png',
-    heroAlt: 'Chiến lược trồng người theo Tư tưởng Hồ Chí Minh',
+    heroAlt: 'Đa tôn giáo tại Việt Nam',
     takeaways: [
       {
         icon: Users,
-        title: 'Quan niệm lịch sử - cụ thể',
+        title: 'Đa tôn giáo',
         summary:
-          'Con người được nhìn nhận gắn với các mối quan hệ xã hội, thống nhất giữa thể lực, tâm lực và trí lực - không trừu tượng, siêu hình.'
+          '13 tôn giáo có pháp nhân, chung sống hòa bình. Đa số tín đồ là nhân dân lao động yêu nước, có tính quốc tế và quan hệ rộng rãi.'
+      },
+      {
+        icon: Shield,
+        title: 'Tôn trọng & Bảo hộ',
+        summary:
+          'Tôn giáo là nhu cầu tinh thần chính đáng. Đảm bảo quyền tự do theo hoặc không theo đạo. Bình đẳng giữa các tôn giáo.'
       },
       {
         icon: Target,
-        title: 'Mục tiêu & Động lực',
+        title: 'Phát huy giá trị',
         summary:
-          'Con người vừa là mục tiêu cuối cùng (giải phóng toàn diện), vừa là động lực quyết định thành công của cách mạng.'
-      },
-      {
-        icon: Lightbulb,
-        title: 'Chiến lược "Trồng người"',
-        summary:
-          '"Vì lợi ích trăm năm thì phải trồng người" - xây dựng con người phát triển toàn diện, vừa hồng vừa chuyên.'
+          'Phát huy giá trị văn hóa, đạo đức tốt đẹp của tôn giáo. Nghiêm cấm lợi dụng tôn giáo để vi phạm pháp luật, chống phá Nhà nước.'
       }
     ],
     content: {
-      conception: {
-        title: 'Quan niệm về con người',
-        content:
-          'Hồ Chí Minh không nhìn nhận con người một cách trừu tượng, mà nhìn nhận con người lịch sử - cụ thể, gắn với các mối quan hệ xã hội (gia đình, giai cấp, dân tộc...) và mang tính thống nhất giữa thể lực, tâm lực và trí lực.'
+      characteristics: {
+        title: 'Đặc điểm tôn giáo tại Việt Nam',
+        items: [
+          'Quốc gia đa tôn giáo (13 tôn giáo có pháp nhân).',
+          'Chung sống hòa bình, không có xung đột tôn giáo.',
+          'Đa số tín đồ là nhân dân lao động yêu nước.',
+          'Có tính quốc tế và quan hệ rộng rãi.'
+        ]
       },
-      goalAndForce: {
-        title: 'Con người là mục tiêu và động lực của cách mạng',
-        goalContent:
-          'Con người là mục tiêu: Mọi giai đoạn cách mạng đều nhằm mục đích cuối cùng là giải phóng dân tộc, giải phóng xã hội, giải phóng giai cấp và tiến tới giải phóng con người một cách toàn diện.',
-        forceContent:
-          'Con người là động lực: Con người là vốn quý nhất, là nhân tố quyết định thành công của sự nghiệp cách mạng. "Dễ trăm lần không dân cũng chịu, khó vạn lần dân liệu cũng xong."'
+      policy: {
+        title: 'Chính sách tôn giáo hiện nay',
+        items: [
+          'Khẳng định tôn giáo là nhu cầu tinh thần chính đáng.',
+          'Tôn trọng và bảo đảm quyền tự do (theo hoặc không theo đạo).',
+          'Thực hiện bình đẳng, đoàn kết giữa các tôn giáo và khối đại đoàn kết dân tộc.',
+          'Phát huy giá trị văn hóa, đạo đức tốt đẹp của tôn giáo.',
+          'Nghiêm cấm lợi dụng tôn giáo để vi phạm pháp luật, chống phá Nhà nước.'
+        ]
       },
-      strategy: {
-        title: 'Chiến lược "Trồng người"',
-        quote:
-          'Vì lợi ích mười năm thì phải trồng cây, vì lợi ích trăm năm thì phải trồng người.',
-        content:
-          'Để xây dựng chủ nghĩa xã hội, trước hết cần có những con người xã hội chủ nghĩa. Nội dung xây dựng là hướng tới con người phát triển toàn diện (vừa hồng vừa chuyên), có đạo đức, ý thức làm chủ, có năng lực và lối sống cao đẹp. Ngay sau khi giành độc lập, ngày 8/9/1945, Chính phủ ban hành Sắc lệnh số 19 và 20 thành lập Nha Bình dân học vụ. Bác kêu gọi "người biết chữ dạy người chưa biết chữ".',
-        methods: [
-          'Thông qua giáo dục - từ nhà trường đến toàn xã hội',
-          'Sự tự tu dưỡng, rèn luyện bền bỉ của bản thân mỗi người',
-          'Nêu gương người tốt, việc tốt trong đời sống xã hội',
-          'Vai trò tổ chức và định hướng của Đảng và các đoàn thể'
+      freedomLimits: {
+        title: 'Giới hạn của quyền tự do tín ngưỡng',
+        intro: 'Đảng và Nhà nước ta luôn tôn trọng và bảo đảm quyền tự do tín ngưỡng, tôn giáo của nhân dân. Tuy nhiên, quyền này có 3 ranh giới tối thượng:',
+        items: [
+          {
+            label: 'Giới hạn Pháp luật',
+            desc: 'Nghiêm cấm lợi dụng tín ngưỡng để hành nghề mê tín dị đoan, lừa đảo, trục lợi (ví dụ: bán bùa chú, làm lễ giải hạn thu tiền bất chính).'
+          },
+          {
+            label: 'Giới hạn Chính trị',
+            desc: 'Không được lợi dụng tôn giáo để chia rẽ khối đại đoàn kết dân tộc, kích động chống phá Nhà nước hoặc xâm phạm an ninh quốc gia.'
+          },
+          {
+            label: 'Giới hạn Văn hóa & Đạo đức',
+            desc: 'Không vi phạm thuần phong mỹ tục, không gây hại cho sức khỏe, tài chính cá nhân. Không được ép buộc người khác phải theo hoặc bỏ đạo.'
+          }
         ]
       }
     }
   },
 
   'module-end': {
-    category: 'Kết luận',
-    title: 'Hiểu mình để vươn ra thế giới',
-    readingTime: 4,
-    lastUpdated: '16/04/2026',
-    heroImage: '/images/anh5.png',
-    heroAlt: 'Hiểu mình để vươn ra thế giới',
+    category: 'Vấn đề thực tế',
+    title: 'Mê tín dị đoan ở người trẻ',
+    readingTime: 5,
+    lastUpdated: '22/04/2026',
+    heroImage: '/images/anh4.png',
+    heroAlt: 'Mê tín dị đoan và người trẻ',
     takeaways: [
       {
+        icon: AlertTriangle,
+        title: 'Áp lực tâm lý',
+        summary:
+          'Khi nỗi sợ thất bại lớn hơn bản lĩnh, người trẻ tìm đến "chỗ dựa siêu nhiên" để giải tỏa tạm thời thay vì đối mặt với thực tế.'
+      },
+      {
         icon: BookOpen,
-        title: '"Tấm hộ chiếu" bản sắc',
+        title: 'Thiếu thế giới quan khoa học',
         summary:
-          'Văn hóa là phương thức sinh tồn - hiểu cội nguồn, ngôn ngữ và các giá trị tinh thần là nền tảng để đi xa mà không lạc lối.'
+          'Học chuyên môn tốt nhưng chưa xây dựng tư duy biện chứng, dễ bị lôi kéo bởi "phép màu" thay vì nỗ lực thực tế.'
       },
       {
-        icon: Shield,
-        title: '"Bộ khung" định hướng',
+        icon: CheckCircle,
+        title: 'Giải pháp',
         summary:
-          'Đạo đức là gốc - biết rõ hệ giá trị của bản thân (chính trực, tự trọng, trách nhiệm) giúp định hướng trong mọi hoàn cảnh.'
-      },
-      {
-        icon: Users,
-        title: '"Chủ thể" tự trồng mình',
-        summary:
-          '"Trồng người" bắt đầu từ chính mình - biết mình mạnh ở đâu (Chuyên) và cần rèn luyện thêm ở đâu (Hồng).'
+          'Gia đình hỗ trợ tâm lý, cảnh báo lừa đảo. Xã hội giáo dục phân biệt tín ngưỡng lành mạnh và mê tín. Xử lý nghiêm người trục lợi tâm linh.'
       }
     ],
     content: {
-      intro:
-        'Từ ba trụ cột tư tưởng Hồ Chí Minh - văn hóa, đạo đức và con người - có thể rút ra một thông điệp cốt lõi cho mỗi cá nhân trong thời đại toàn cầu hóa: Muốn vươn ra thế giới, trước hết phải hiểu chính mình.',
-      sections: [
-        {
-          subject: 'Văn hóa',
-          metaphor: '"Tấm hộ chiếu" bản sắc',
-          description:
-            'Trong tư tưởng Hồ Chí Minh, văn hóa không chỉ là kiến thức hay nghệ thuật - đó là phương thức sinh tồn, cách một dân tộc ứng xử với thế giới và với chính mình.',
-          quote: null,
-          insight:
-            'Hiểu mình qua văn hóa là hiểu về cội nguồn, ngôn ngữ và các giá trị tinh thần của dân tộc. Đó là tấm hộ chiếu giúp bạn hòa nhập với thế giới mà không hòa tan - giữ được bản sắc giữa muôn vàn luồng văn hóa bên ngoài.'
+      whyYouth: {
+        title: 'Tại sao người trẻ học thức vẫn dễ rơi vào mê tín?',
+        items: [
+          {
+            label: 'Áp lực tâm lý cực đoan',
+            desc: 'Khi lo sợ thất bại vượt quá khả năng chịu đựng, con người có nhu cầu tìm kiếm một "chỗ dựa tinh thần" siêu nhiên để an tâm tạm thời.'
+          },
+          {
+            label: 'Thiếu thế giới quan duy vật khoa học',
+            desc: 'Học thức chuyên môn không đồng nghĩa với việc đã có một thế giới quan duy vật khoa học vững chắc. Khi gặp khủng hoảng, họ dễ hướng đến "phép màu" thay vì nỗ lực thực tế.'
+          }
+        ]
+      },
+      freedomQuestion: {
+        title: 'Quyền tự do tín ngưỡng có bảo vệ hành vi mê tín?',
+        answer:
+          'Pháp luật bảo vệ việc thực hành "tín ngưỡng truyền thống" (như thờ cúng tổ tiên). Tuy nhiên, hành vi của người em đã vượt qua giới hạn của tín ngưỡng truyền thống và trở thành hành vi mê tín dị đoan vì niềm tin mù quáng vào lời phán của "thầy" online mà chi hàng triệu đồng mua bùa chú để có thể thuận lợi vượt qua kì thi. Và người “thầy” đã lợi dụng điều đó để trục lợi cá nhân cho mình gây tổn thất tài chính cho người em và gia đình. Điều này đã vượt qua giới hạn về pháp luật và văn hóa của quyền tự do tín ngưỡng.'
+      },
+      solutions: {
+        title: 'Giải pháp đề xuất',
+        family: {
+          subtitle: 'Gia đình',
+          items: [
+            'Tuyệt đối không dùng mệnh lệnh áp đặt hay cấm đoán gay gắt vì có sẽ gây phản tác dụng, làm tăng sự căng thẳng và áp lực tâm lý đối với người đang chịu áp lực.',
+            'Hỗ trợ tâm lý, giúp con em giải tỏa áp lực học tập.',
+            'Cảnh báo về các hình thức lừa đảo tâm linh online.',
+            'Liên hệ với các cơ quan chức năng có thẩm quyền để báo cáo về các trường hợp lợi dụng tín ngưỡng để trục lợi cá nhân.'
+          ]
         },
-        {
-          subject: 'Đạo đức',
-          metaphor: '"Bộ khung" định hướng',
-          description:
-            'Hồ Chí Minh khẳng định đạo đức là gốc của mọi hành động. Không có đạo đức, tài năng trở thành con dao hai lưỡi.',
-          quote:
-            'Có tài mà không có đức là người vô dụng. Có đức mà không có tài thì làm việc gì cũng khó.',
-          insight:
-            'Hiểu mình qua đạo đức là biết rõ hệ giá trị của bản thân: sự chính trực, lòng tự trọng và tinh thần trách nhiệm. Đó là bộ khung nội tâm giúp bạn đưa ra quyết định đúng đắn ngay cả khi không ai nhìn.'
-        },
-        {
-          subject: 'Con người',
-          metaphor: '"Chủ thể" tự trồng mình',
-          description:
-            'Chiến lược "trồng người" của Bác hướng tới sự phát triển toàn diện - vừa hồng (đạo đức, tư tưởng) vừa chuyên (năng lực, kỹ năng). Và quá trình đó bắt đầu từ chính mỗi cá nhân.',
-          quote:
-            'Vì lợi ích mười năm thì phải trồng cây, vì lợi ích trăm năm thì phải trồng người.',
-          insight:
-            '"Trồng người" không chỉ là trách nhiệm của xã hội - đó là việc của chính bạn. Hiểu mình là bước đầu tiên: biết mình mạnh ở đâu (năng lực - "Chuyên") và cần rèn luyện thêm ở đâu (đạo đức, thái độ - "Hồng").'
+        society: {
+          subtitle: 'Xã hội',
+          items: [
+            'Tăng cường giáo dục về sự khác biệt giữa tín ngưỡng và mê tín.',
+            'Các tổ chức tôn giáo cần hướng dẫn thực hành đúng đắn.',
+            'Cơ quan chức năng xử lý nghiêm các cá nhân lợi dụng tâm linh để trục lợi.'
+          ]
         }
-      ],
-      closing:
-        'Văn hóa cho bạn bản sắc. Đạo đức cho bạn phương hướng. Sự tự hiểu mình cho bạn sức mạnh nội tâm. Đó là hành trang để mỗi người Việt Nam tự tin bước ra thế giới - hòa nhập nhưng không hòa tan.'
+      }
     }
   },
 
@@ -313,19 +330,19 @@ export const moduleContents = {
     category: 'Công cụ & Tham khảo',
     title: 'AI Tools & Nguồn tham khảo',
     readingTime: 2,
-    lastUpdated: '16/04/2026',
+    lastUpdated: '22/04/2026',
     heroImage: null,
     heroAlt: null,
     takeaways: [
       {
         icon: BookOpen,
         title: 'Công cụ AI',
-        summary: 'Các công cụ AI hỗ trợ xây dựng nội dung khóa học HCM202.'
+        summary: 'Các công cụ AI hỗ trợ xây dựng nội dung bài thuyết trình MLN131.'
       },
       {
         icon: CheckCircle,
         title: 'Nguồn tham khảo',
-        summary: 'Tài liệu chính thức của môn Tư tưởng Hồ Chí Minh.'
+        summary: 'Tài liệu chính thức của môn Chủ nghĩa Mác - Lênin.'
       },
       {
         icon: Shield,
@@ -335,50 +352,51 @@ export const moduleContents = {
     ],
     content: {
       introduction:
-        'Khóa học này được xây dựng với sự hỗ trợ của các công cụ AI hiện đại, nhằm nâng cao chất lượng nội dung và trải nghiệm học tập môn HCM202 - Tư tưởng Hồ Chí Minh.',
+        'Bài thuyết trình này được xây dựng với sự hỗ trợ của các công cụ AI hiện đại, nhằm nâng cao chất lượng nội dung và trải nghiệm học tập môn MLN131 - Chủ nghĩa Mác - Lênin.',
       tools: [
         {
           name: 'NotebookLM',
           description:
-            'Tổng hợp, phân tích và tóm tắt tài liệu học tập về Tư tưởng Hồ Chí Minh từ nhiều nguồn tham khảo.',
-          promptLink: "https://notebooklm.google.com/notebook/6b1e622b-41bb-416b-84c8-1dc812f973fd"
+            'Tổng hợp, phân tích và tóm tắt tài liệu học tập về Chủ nghĩa Mác - Lênin từ nhiều nguồn tham khảo.',
+          promptLink: "https://notebooklm.google.com/notebook/35e466d7-01a3-4e8c-9e42-95c466aafe3a"
         },
         {
           name: 'Google Gemini',
           description:
-            'Hỗ trợ viết, chỉnh sửa và phát triển nội dung các chương về văn hóa, đạo đức và con người.',
-          promptLink: "https://gemini.google.com/notebook/notebooks%2F6b1e622b-41bb-416b-84c8-1dc812f973fd"
+            'Hỗ trợ viết, chỉnh sửa và phát triển nội dung các chương về tôn giáo, tín ngưỡng và mê tín dị đoan.',
+          promptLink: "https://gemini.google.com/share/c106021b59ec"
         },
         {
-          name: 'GitHub Copilot (local)',
+          name: 'Claude Anthropic (local)',
           description:
-            'Hỗ trợ lập trình giao diện React và JavaScript cho trang web.',
+            'Hỗ trợ lập trình giao diện React và JavaScript cho trang web trình bày bài thuyết trình.',
           promptLink: null
         },
         {
           name: 'Notion',
           description:
-            'Thực hiện Soạn thảo, ghi chú thông tin và cải thiện và kiểm tra độ chính xác nội dung học thuật.',
-          promptLink: "https://www.notion.so/QC9-note-34484c087ff580a88d80d2b1cb674fc0?source=copy_link"
+            'Soạn thảo, ghi chú thông tin và cải thiện, kiểm tra độ chính xác nội dung học thuật.',
+          promptLink: "https://www.notion.so/Note-ch-ng-6-T-n-gi-o-trong-th-i-k-qu-l-n-ch-ngh-a-x-h-i-34984c087ff580adaee1ee7a73382862?source=copy_link"
+        },
+        {
+          name: 'Google Docs',
+          description:
+            'Soạn thảo và chỉnh sửa nội dung bài thuyết trình theo nhóm, hỗ trợ cộng tác và theo dõi lịch sử chỉnh sửa.',
+          promptLink: "https://docs.google.com/document/d/1mmlwvwN02EhiNOpokQg3vPmRoWzKtTA7BFbUIJ_ICUk/edit?usp=sharing"
         }
       ],
       references: [
         {
-          title:
-            'Giáo trình Tư tưởng Hồ Chí Minh - Bộ Giáo dục và Đào tạo',
-          link: "https://drive.google.com/file/d/1IcRiR-SGJ0s6omK8pE6TfDtzvVehSRyn/view"
+          title: 'Giáo trình Chủ nghĩa Mác - Lênin',
+          link: "https://drive.google.com/file/d/1cBWwww2Guqsm0e_7nrQGKZxcwGJnswPG/view"
         },
         {
-          title: 'Quan điểm về vị trí, vai trò của văn hóa',
-          link: "https://hochiminh.vn/tu-tuong-dao-duc-ho-chi-minh/nghien-cuu-tu-tuong-dao-duc-ho-chi-minh/mot-so-quan-diem-cua-chu-tich-ho-chi-minh-ve-van-hoa-va-nang-tam-van-hoa-viet-nam-7895"
-        },
-        {
-          title: 'Tư tưởng Hô Chí Minh về đạo đức',
-          link: "https://hochiminh.vn/tu-tuong-dao-duc-ho-chi-minh/nghien-cuu-tu-tuong-dao-duc-ho-chi-minh/mot-so-quan-diem-cua-chu-tich-ho-chi-minh-ve-van-hoa-va-nang-tam-van-hoa-viet-nam-7895"
+          title: 'Luật Tín ngưỡng, Tôn giáo năm 2016',
+          link: "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Luat-tin-nguong-ton-giao-2016-322934.aspx"
         }
       ],
       teamCommitment:
-        'Nhóm 6 cam kết rằng các công cụ AI được sử dụng hoàn toàn cho mục đích hỗ trự, tham khảo và tổng hợp dữ liệu nhàmw nâng cao chất lượng nội dung, và không được dùng để vi phạm bản quyền hoặc quyền sở hữu trí tuệ của bất kỳ bên thứ ba nào.'
+        'Nhóm 5 cam kết rằng các công cụ AI được sử dụng hoàn toàn cho mục đích hỗ trợ, tham khảo và tổng hợp dữ liệu nhằm nâng cao chất lượng nội dung, và không được dùng để vi phạm bản quyền hoặc quyền sở hữu trí tuệ của bất kỳ bên thứ ba nào.'
     }
   }
 };

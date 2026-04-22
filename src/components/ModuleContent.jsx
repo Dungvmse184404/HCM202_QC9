@@ -25,6 +25,30 @@ const LabeledList = ({ items }) => (
   </div>
 );
 
+const ComparisonTable = ({ data }) => (
+  <div className="comparison-table-wrapper">
+    <table className="comparison-table">
+      <thead>
+        <tr>
+          {data.headers.map((h, i) => (
+            <th key={i}>{h}</th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {data.rows.map((row, i) => (
+          <tr key={i}>
+            <td className="comparison-table__criteria">{row.criteria}</td>
+            <td>{row.tonGiao}</td>
+            <td>{row.tinNguong}</td>
+            <td className="comparison-table__negative">{row.meTinDiDoan}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+);
+
 const ModuleContent = ({ module, moduleData, prevModule, nextModule, onNavigate }) => {
   const renderContent = () => {
     switch (module.id) {
@@ -33,23 +57,13 @@ const ModuleContent = ({ module, moduleData, prevModule, nextModule, onNavigate 
         return (
           <>
             <ContentSection>
-              <SectionTitle>Khái niệm và vị trí của văn hóa</SectionTitle>
-              <Paragraph>{moduleData.content.definition}</Paragraph>
+              <SectionTitle>{moduleData.content.definitions.title}</SectionTitle>
+              <LabeledList items={moduleData.content.definitions.items} />
             </ContentSection>
 
             <ContentSection>
-              <SectionTitle>{moduleData.content.roles.title}</SectionTitle>
-              <BulletList items={moduleData.content.roles.items} />
-            </ContentSection>
-
-            <ContentSection>
-              <SectionTitle>{moduleData.content.orientation.title}</SectionTitle>
-              <Paragraph>{moduleData.content.orientation.content}</Paragraph>
-            </ContentSection>
-
-            <ContentSection>
-              <SectionTitle>{moduleData.content.threeQualities.title}</SectionTitle>
-              <LabeledList items={moduleData.content.threeQualities.items} />
+              <SectionTitle>{moduleData.content.comparisonTable.title}</SectionTitle>
+              <ComparisonTable data={moduleData.content.comparisonTable} />
             </ContentSection>
           </>
         );
@@ -58,20 +72,18 @@ const ModuleContent = ({ module, moduleData, prevModule, nextModule, onNavigate 
         return (
           <>
             <ContentSection>
-              <SectionTitle>{moduleData.content.role.title}</SectionTitle>
-              <HighlightBox title="⚡ Luận điểm cốt lõi" type="warning">
-                {moduleData.content.role.content}
-              </HighlightBox>
+              <SectionTitle>{moduleData.content.economic.title}</SectionTitle>
+              <BulletList items={moduleData.content.economic.items} />
             </ContentSection>
 
             <ContentSection>
-              <SectionTitle>{moduleData.content.fourStandards.title}</SectionTitle>
-              <LabeledList items={moduleData.content.fourStandards.items} />
+              <SectionTitle>{moduleData.content.psychological.title}</SectionTitle>
+              <BulletList items={moduleData.content.psychological.items} />
             </ContentSection>
 
             <ContentSection>
-              <SectionTitle>{moduleData.content.threePrinciples.title}</SectionTitle>
-              <LabeledList items={moduleData.content.threePrinciples.items} />
+              <SectionTitle>{moduleData.content.cognitive.title}</SectionTitle>
+              <BulletList items={moduleData.content.cognitive.items} />
             </ContentSection>
           </>
         );
@@ -80,32 +92,19 @@ const ModuleContent = ({ module, moduleData, prevModule, nextModule, onNavigate 
         return (
           <>
             <ContentSection>
-              <SectionTitle>{moduleData.content.conception.title}</SectionTitle>
-              <Paragraph>{moduleData.content.conception.content}</Paragraph>
+              <SectionTitle>{moduleData.content.characteristics.title}</SectionTitle>
+              <BulletList items={moduleData.content.characteristics.items} />
             </ContentSection>
 
             <ContentSection>
-              <SectionTitle>{moduleData.content.goalAndForce.title}</SectionTitle>
-              <TwoColumn
-                positive={{
-                  title: 'Con người là mục tiêu',
-                  items: [moduleData.content.goalAndForce.goalContent]
-                }}
-                negative={{
-                  title: 'Con người là động lực',
-                  items: [moduleData.content.goalAndForce.forceContent]
-                }}
-              />
+              <SectionTitle>{moduleData.content.policy.title}</SectionTitle>
+              <BulletList items={moduleData.content.policy.items} />
             </ContentSection>
 
             <ContentSection>
-              <SectionTitle>{moduleData.content.strategy.title}</SectionTitle>
-              <HighlightBox title="💬 Lời Bác Hồ" type="info">
-                {moduleData.content.strategy.quote}
-              </HighlightBox>
-              <Paragraph>{moduleData.content.strategy.content}</Paragraph>
-              <SectionSubtitle>Biện pháp chủ yếu</SectionSubtitle>
-              <BulletList items={moduleData.content.strategy.methods} />
+              <SectionTitle>{moduleData.content.freedomLimits.title}</SectionTitle>
+              <Paragraph>{moduleData.content.freedomLimits.intro}</Paragraph>
+              <LabeledList items={moduleData.content.freedomLimits.items} />
             </ContentSection>
           </>
         );
@@ -114,32 +113,23 @@ const ModuleContent = ({ module, moduleData, prevModule, nextModule, onNavigate 
         return (
           <>
             <ContentSection>
-              <Paragraph>
-                <strong>{moduleData.content.intro}</strong>
-              </Paragraph>
+              <SectionTitle>{moduleData.content.whyYouth.title}</SectionTitle>
+              <LabeledList items={moduleData.content.whyYouth.items} />
             </ContentSection>
 
-            {moduleData.content.sections.map((section, i) => (
-              <ContentSection key={i}>
-                <SectionTitle>
-                  {section.subject} - {section.metaphor}
-                </SectionTitle>
-                <Paragraph>{section.description}</Paragraph>
-
-                {section.quote && (
-                  <HighlightBox title="💬 Lời Bác Hồ" type="info">
-                    "{section.quote}"
-                  </HighlightBox>
-                )}
-
-                <Paragraph>{section.insight}</Paragraph>
-              </ContentSection>
-            ))}
+            <ContentSection>
+              <SectionTitle>{moduleData.content.freedomQuestion.title}</SectionTitle>
+              <HighlightBox title="Trả lời: KHÔNG" type="warning">
+                {moduleData.content.freedomQuestion.answer}
+              </HighlightBox>
+            </ContentSection>
 
             <ContentSection>
-              <Paragraph>
-                <strong>{moduleData.content.closing}</strong>
-              </Paragraph>
+              <SectionTitle>{moduleData.content.solutions.title}</SectionTitle>
+              <SectionSubtitle>{moduleData.content.solutions.family.subtitle}</SectionSubtitle>
+              <BulletList items={moduleData.content.solutions.family.items} />
+              <SectionSubtitle>{moduleData.content.solutions.society.subtitle}</SectionSubtitle>
+              <BulletList items={moduleData.content.solutions.society.items} />
             </ContentSection>
           </>
         );
@@ -206,7 +196,7 @@ const ModuleContent = ({ module, moduleData, prevModule, nextModule, onNavigate 
             </ContentSection>
 
             <ContentSection>
-              <SectionTitle>Cam kết của nhóm 6</SectionTitle>
+              <SectionTitle>Cam kết của Nhóm 5</SectionTitle>
               <HighlightBox title="✓ Cam kết" type="success">
                 {moduleData.content.teamCommitment}
               </HighlightBox>

@@ -68,8 +68,8 @@ const Sidebar = ({
               <GraduationCap size={24} />
             </div>
             <div>
-              <div className="sidebar__logo-text">HCM202_QC9 - Nhóm 6</div>
-              <div className="sidebar__logo-subtitle">Tư tưởng Hồ Chí Minh</div>
+              <div className="sidebar__logo-text">MLN131 - Nhóm 5</div>
+              <div className="sidebar__logo-subtitle">Chủ nghĩa Mác - Lênin</div>
             </div>
           </div>
         </div>

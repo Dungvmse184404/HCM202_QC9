@@ -15,20 +15,21 @@ const Welcome = ({ onStart }) => {
         {/* Badge */}
         <div className="welcome__badge">
           <Sparkles size={16} className="welcome__badge-icon" />
-          <span>Khóa học Tư tưởng Hồ Chí Minh - HCM202</span>
+          <span>MLN131 - Chủ nghĩa Mác - Lênin - Nhóm 5</span>
         </div>
 
         {/* Title */}
         <h1 className="welcome__title">
-          Tư tưởng Hồ Chí Minh về{' '}
-          <span className="welcome__title-accent">Văn hóa, Đạo đức và Con người</span>
+          Chương 6: Vấn đề{' '}
+          <span className="welcome__title-accent">dân tộc và tôn giáo</span>{' '}
+          trong thời kỳ quá độ lên chủ nghĩa xã hội
         </h1>
 
         {/* Description */}
         <p className="welcome__description">
-          Tìm hiểu hệ thống tư tưởng Hồ Chí Minh về văn hóa, đạo đức và con người -
-          nền tảng lý luận và kim chỉ nam cho sự nghiệp xây dựng, bảo vệ Tổ quốc
-          Việt Nam xã hội chủ nghĩa.
+          Tìm hiểu quan điểm Chủ nghĩa Mác - Lênin về tôn giáo, tín ngưỡng và mê tín dị đoan -
+          cùng chính sách tôn giáo của Đảng và Nhà nước Việt Nam trong thời kỳ quá độ
+          lên chủ nghĩa xã hội.
         </p>
 
         {/* Features */}
@@ -37,9 +38,9 @@ const Welcome = ({ onStart }) => {
             <div className="welcome__feature-icon">
               <BookOpen size={28} />
             </div>
-            <h3 className="welcome__feature-title">Nội dung chuyên sâu</h3>
+            <h3 className="welcome__feature-title">Hệ thống khái niệm</h3>
             <p className="welcome__feature-text">
-              Hệ thống tư tưởng HCM về văn hóa, đạo đức và con người theo giáo trình chính thức
+              Phân biệt rõ tôn giáo, tín ngưỡng và mê tín dị đoan theo quan điểm Mác - Lênin
             </p>
           </div>
 
@@ -47,9 +48,9 @@ const Welcome = ({ onStart }) => {
             <div className="welcome__feature-icon">
               <Target size={28} />
             </div>
-            <h3 className="welcome__feature-title">Mục tiêu rõ ràng</h3>
+            <h3 className="welcome__feature-title">Chính sách tôn giáo</h3>
             <p className="welcome__feature-text">
-              Nắm vững 4 chuẩn mực đạo đức, 3 tính chất văn hóa và chiến lược "trồng người"
+              Nắm vững chính sách, giới hạn quyền tự do tín ngưỡng và vai trò của Nhà nước
             </p>
           </div>
 
@@ -59,7 +60,7 @@ const Welcome = ({ onStart }) => {
             </div>
             <h3 className="welcome__feature-title">Vận dụng thực tiễn</h3>
             <p className="welcome__feature-text">
-              Liên hệ tư tưởng HCM với sự nghiệp đổi mới và phát triển con người toàn diện
+              Phân tích vấn đề mê tín dị đoan ở người trẻ và đề xuất giải pháp thiết thực
             </p>
           </div>
         </div>
