@@ -220,7 +220,7 @@ export const moduleContents = {
       characteristics: {
         title: 'Đặc điểm tôn giáo tại Việt Nam',
         items: [
-          'Quốc gia đa tôn giáo (13 tôn giáo có pháp nhân).',
+          'Quốc gia đa tôn giáo (16 tôn giáo có pháp nhân).',
           'Chung sống hòa bình, không có xung đột tôn giáo.',
           'Đa số tín đồ là nhân dân lao động yêu nước.',
           'Có tính quốc tế và quan hệ rộng rãi.'
